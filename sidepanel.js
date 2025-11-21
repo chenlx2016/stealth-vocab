@@ -281,36 +281,62 @@ function loadDetailedInfo() {
     const synonyms = word.synonyms || [];
     const antonyms = word.antonyms || [];
 
-    // Update core example - simplified without buttons
+    // Update core example with label
     const coreExampleEl = document.getElementById('core-example');
     if (coreExampleEl) {
         coreExampleEl.innerHTML = `
+            <div class="section-header">📝 例句</div>
             <div class="sentence-example">${coreExample}</div>
         `;
     }
 
-    // Update additional examples - simplified
+    // Update additional examples with label
     const exampleSentences = document.getElementById('example-sentences');
     if (exampleSentences) {
-        exampleSentences.innerHTML = additionalExamples
-            .map(example => `<div class="example-item">${example}</div>`)
-            .join('');
+        if (additionalExamples.length > 0) {
+            exampleSentences.innerHTML = `
+                <div class="section-header">💬 更多例句</div>
+                ${additionalExamples
+                    .map(example => `<div class="example-item">${example}</div>`)
+                    .join('')}
+            `;
+        } else {
+            exampleSentences.innerHTML = '';
+        }
     }
 
-    // Update synonyms and antonyms - simplified
+    // Update synonyms with label
     const synonymsEl = document.getElementById('synonyms');
-    const antonymsEl = document.getElementById('antonyms');
-
     if (synonymsEl) {
-        synonymsEl.innerHTML = synonyms
-            .map(synonym => `<span class="synonym-item">${synonym}</span>`)
-            .join('');
+        if (synonyms.length > 0) {
+            synonymsEl.innerHTML = `
+                <div class="section-header">🔄 同义词</div>
+                <div class="synonyms-container">
+                    ${synonyms
+                        .map(synonym => `<span class="synonym-item">${synonym}</span>`)
+                        .join('')}
+                </div>
+            `;
+        } else {
+            synonymsEl.innerHTML = '';
+        }
     }
 
+    // Update antonyms with label
+    const antonymsEl = document.getElementById('antonyms');
     if (antonymsEl) {
-        antonymsEl.innerHTML = antonyms
-            .map(antonym => `<span class="antonym-item">${antonym}</span>`)
-            .join('');
+        if (antonyms.length > 0) {
+            antonymsEl.innerHTML = `
+                <div class="section-header">🔀 反义词</div>
+                <div class="antonyms-container">
+                    ${antonyms
+                        .map(antonym => `<span class="antonym-item">${antonym}</span>`)
+                        .join('')}
+                </div>
+            `;
+        } else {
+            antonymsEl.innerHTML = '';
+        }
     }
 
     console.log('✅ Detailed info loaded for:', word.english);

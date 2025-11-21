@@ -657,6 +657,31 @@ body {
 }
 
 
+/* Section headers for detailed info */
+.section-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.section-header:first-child {
+  margin-top: 0;
+}
+
+/* Synonyms and antonyms containers */
+.synonyms-container,
+.antonyms-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
 /* Detailed information section */
 .detailed-info {
   margin-top: 16px;
