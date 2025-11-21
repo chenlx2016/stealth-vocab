@@ -16,7 +16,7 @@ try {
 // Load vocabulary from data file
 let vocabularyData = [];
 
-// Fallback test vocabulary
+// Fallback vocabulary for testing
 const fallbackVocabulary = [
     {
         id: 'test_1',
@@ -33,6 +33,70 @@ const fallbackVocabulary = [
         ],
         synonyms: ['examination', 'trial', 'assessment'],
         antonyms: ['ignore', 'neglect']
+    },
+    {
+        id: 'test_2',
+        english: 'significant',
+        chinese: '重要的；显著的',
+        phonetics: '/sɪɡˈnɪfɪkənt/',
+        wordType: 'adjective',
+        category: 'academic',
+        coreExample: 'The research shows a significant improvement in patient recovery.',
+        additionalExamples: [
+            'There has been a significant increase in sales.',
+            'This is a significant moment in our company\'s history.',
+            'The discovery has significant implications for cancer treatment.'
+        ],
+        synonyms: ['important', 'notable', 'meaningful'],
+        antonyms: ['insignificant', 'trivial', 'minor']
+    },
+    {
+        id: 'test_3',
+        english: 'efficient',
+        chinese: '效率高的；有能力的',
+        phonetics: '/ɪˈfɪʃənt/',
+        wordType: 'adjective',
+        category: 'business',
+        coreExample: 'We need to find a more efficient way to organize our workflow.',
+        additionalExamples: [
+            'The new system is much more efficient than the old one.',
+            'She is very efficient at managing her time.',
+            'Efficient energy use can save money and help the environment.'
+        ],
+        synonyms: ['productive', 'effective', 'organized'],
+        antonyms: ['inefficient', 'wasteful', 'slow']
+    },
+    {
+        id: 'test_4',
+        english: 'analyze',
+        chinese: '分析；分解',
+        phonetics: '/ˈænəlaɪz/',
+        wordType: 'verb',
+        category: 'academic',
+        coreExample: 'We need to analyze the data before making any conclusions.',
+        additionalExamples: [
+            'The scientist will analyze the samples carefully.',
+            'Let me analyze the situation from different perspectives.',
+            'The software helps users analyze market trends.'
+        ],
+        synonyms: ['examine', 'evaluate', 'study'],
+        antonyms: ['ignore', 'neglect', 'simplify']
+    },
+    {
+        id: 'test_5',
+        english: 'concept',
+        chinese: '概念；观念',
+        phonetics: '/ˈkɒnsept/',
+        wordType: 'noun',
+        category: 'academic',
+        coreExample: 'The concept of artificial intelligence is fascinating.',
+        additionalExamples: [
+            'Students struggle to understand abstract concepts.',
+            'The marketing team developed a new concept for the campaign.',
+            'This book introduces basic concepts in physics.'
+        ],
+        synonyms: ['idea', 'notion', 'theory'],
+        antonyms: ['reality', 'fact', 'practice']
     }
 ];
 
@@ -40,23 +104,76 @@ const fallbackVocabulary = [
 let currentWordIndex = 0;
 let isFlipped = false;
 
-// Load vocabulary data from JSON file
+// Load vocabulary data from multiple sources with fallback strategy
 async function loadVocabularyData() {
     try {
-        const response = await fetch('./data/vocabulary-complete.json');
-        if (response.ok) {
-            vocabularyData = await response.json();
-            console.log(`✅ Loaded ${vocabularyData.length} vocabulary words`);
-            return true;
-        } else {
-            throw new Error('Failed to fetch vocabulary data');
+        console.log('🔄 Starting vocabulary data loading...');
+
+        // First try to load external JSON file (for development/testing)
+        const externalPaths = [
+            chrome.runtime.getURL('data/vocabulary-complete.json'),
+            './data/vocabulary-complete.json',
+            'data/vocabulary-complete.json'
+        ];
+
+        let dataLoaded = false;
+
+        for (const path of externalPaths) {
+            try {
+                console.log(`🔄 Trying external vocabulary from: ${path}`);
+                const response = await fetch(path);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data && data.length > 0) {
+                        vocabularyData = data;
+                        console.log(`✅ Loaded ${vocabularyData.length} vocabulary words from external file`);
+                        dataLoaded = true;
+                        break;
+                    }
+                }
+            } catch (pathError) {
+                console.log(`❌ External file failed: ${pathError.message}`);
+                continue;
+            }
         }
+
+        // If external loading fails, try Chrome storage (for production)
+        if (!dataLoaded) {
+            try {
+                console.log('🔄 Trying Chrome storage for vocabulary data...');
+                const stored = await chrome.storage.local.get(['vocabularyData']);
+                if (stored.vocabularyData && stored.vocabularyData.length > 0) {
+                    vocabularyData = stored.vocabularyData;
+                    console.log(`✅ Loaded ${vocabularyData.length} vocabulary words from Chrome storage`);
+                    dataLoaded = true;
+                }
+            } catch (storageError) {
+                console.log(`❌ Chrome storage failed: ${storageError.message}`);
+            }
+        }
+
+        // If all else fails, use built-in fallback vocabulary
+        if (!dataLoaded) {
+            console.log('🔄 Using built-in fallback vocabulary data');
+            vocabularyData = fallbackVocabulary;
+        }
+
+        console.log(`📊 Final vocabulary size: ${vocabularyData.length} words`);
+        return true;
+
     } catch (error) {
-        console.error('❌ Error loading vocabulary data:', error);
+        console.error('❌ Critical error loading vocabulary data:', error);
         vocabularyData = fallbackVocabulary;
-        console.log('🔄 Using fallback vocabulary data');
+        console.log('🔄 Emergency fallback to built-in vocabulary');
         return false;
     }
+}
+
+// Initialize vocabulary data with a sample for immediate display
+function initializeQuickSample() {
+    // Provide a quick sample vocabulary for immediate display
+    vocabularyData = fallbackVocabulary.slice(0, 3);
+    console.log('🚀 Quick sample vocabulary initialized for immediate display');
 }
 
 // Get current vocabulary data
@@ -351,19 +468,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Initialize stats and display first word
+    // Initialize with immediate display, then load full data
     setTimeout(async () => {
         initializeStats();
 
-        // Load vocabulary data
-        console.log('🔄 Loading vocabulary data...');
-        await loadVocabularyData();
+        // Initialize quick sample for immediate user feedback
+        initializeQuickSample();
 
-        // Display first word after data is loaded
-        displayEnglishSide(true); // 初始单词时隐藏详细信息
-        updateStatsDisplay(); // Update stats with correct word count
-        console.log('✅ Initialization complete - showing English by default');
-    }, 100);
+        // Display first word immediately with sample data
+        displayEnglishSide(true);
+        updateStatsDisplay();
+        console.log('🚀 Initial display ready - showing sample vocabulary');
+
+        // Load full vocabulary data in background
+        console.log('🔄 Loading complete vocabulary data in background...');
+        const success = await loadVocabularyData();
+
+        if (success) {
+            // Update display with full vocabulary data
+            updateStatsDisplay();
+            console.log('✅ Complete vocabulary loaded and stats updated');
+        } else {
+            console.log('⚠️ Using fallback vocabulary - display still functional');
+        }
+
+        console.log('🎉 Initialization complete');
+    }, 50); // Faster initial display
 });
 
 // Test simple functionality
