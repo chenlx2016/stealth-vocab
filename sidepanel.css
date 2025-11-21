@@ -643,8 +643,8 @@ body {
 
 /* Core example sentence - simplified */
 .core-example {
-  margin-bottom: 12px;
-  padding: 8px;
+  margin-bottom: 4px;
+  padding: 6px;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 6px;
 }
@@ -662,8 +662,8 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: var(--text-secondary);
-  margin-bottom: 8px;
-  margin-top: 16px;
+  margin-bottom: 4px;
+  margin-top: 8px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -678,8 +678,9 @@ body {
 .antonyms-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 4px;
+  row-gap: 2px;
+  margin-bottom: 4px;
 }
 
 /* Detailed information section */
@@ -688,6 +689,9 @@ body {
   padding-top: 16px;
   border-top: 1px solid var(--border-subtle);
   animation: slideDown 0.3s ease;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 8px;
 }
 
 @keyframes slideDown {
@@ -750,7 +754,7 @@ body {
 }
 
 .example-sentences .example-item {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   opacity: 0.8;
 }
 
@@ -778,10 +782,11 @@ body {
   font-size: 11px;
   color: var(--text-secondary);
   background-color: var(--surface-hover);
-  padding: 2px 6px;
+  padding: 1px 5px;
   border-radius: 3px;
   border: 1px solid var(--border-subtle);
   opacity: 0.8;
+  line-height: 1.2;
 }
 
 .synonym-item:hover,
@@ -791,12 +796,25 @@ body {
   color: var(--text-primary);
 }
 
-/* Scrollable content for long word information */
-.example-sentences,
-.synonyms-list,
-.antonyms-list {
-  max-height: 120px;
-  overflow-y: auto;
+/* Removed individual scroll settings - now the entire detailed-info section scrolls */
+
+/* Custom scrollbar styling for detailed info */
+.detailed-info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.detailed-info::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 3px;
+}
+
+.detailed-info::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.detailed-info::-webkit-scrollbar-thumb:hover {
+  background: var(--text-subtle);
 }
 
 /* Enhanced card back layout adjustments */
