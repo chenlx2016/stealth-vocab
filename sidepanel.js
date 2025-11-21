@@ -68,7 +68,6 @@ const testVocabulary = [
 // Simple state management
 let currentWordIndex = 0;
 let isFlipped = false;
-let todayReviewCount = 0;
 
 // Simple functions
 function getCurrentWord() {
@@ -79,7 +78,7 @@ function moveToNextWord() {
     currentWordIndex++;
 }
 
-function displayEnglishSide() {
+function displayEnglishSide(hideDetailedInfo = true) {
     const word = getCurrentWord();
     const englishWord = document.getElementById('english-word');
     const phonetics = document.getElementById('phonetics');
@@ -97,9 +96,9 @@ function displayEnglishSide() {
     if (wordType) wordType.textContent = word.wordType;
     if (wordCategory) wordCategory.textContent = word.category;
 
-    // Hide detailed info by default when showing new word
+    // Hide detailed info by default when showing new word (but not when flipping)
     const detailedInfo = document.getElementById('detailed-info');
-    if (detailedInfo) {
+    if (detailedInfo && hideDetailedInfo) {
         detailedInfo.style.display = 'none';
     }
 
@@ -195,16 +194,29 @@ function flipCard() {
         displayChineseSide();  // 翻转后显示中文
         console.log('🔃 Flipped to Chinese side');
     } else {
-        displayEnglishSide(); // 默认显示英文
+        displayEnglishSide(false); // 翻转时保留详细信息
         console.log('🔃 Flipped to English side');
     }
     console.log('🔃 Card flipped:', isFlipped);
 }
 
-function submitFeedback(status) {
-    todayReviewCount++;
-    console.log(`📝 Feedback submitted: ${status}, Today's count: ${todayReviewCount}`);
+let todayReviewCount = 0;
+let cumulativeMasteredCount = 0;
 
+// Initialize cumulative stats from localStorage
+function initializeStats() {
+    const savedStats = localStorage.getItem('vocabStats');
+    if (savedStats) {
+        const stats = JSON.parse(savedStats);
+        todayReviewCount = stats.todayReviewCount || 0;
+        cumulativeMasteredCount = stats.cumulativeMasteredCount || 0;
+    }
+
+    // Update UI with loaded stats
+    updateStatsDisplay();
+}
+
+function updateStatsDisplay() {
     // Update progress
     const progressText = document.getElementById('progress-text');
     if (progressText) {
@@ -214,13 +226,39 @@ function submitFeedback(status) {
     // Update cumulative stats
     const totalWords = document.getElementById('total-words');
     const cumulativeReviews = document.getElementById('cumulative-reviews');
+    const cumulativeMastered = document.getElementById('cumulative-mastered');
     if (totalWords) totalWords.textContent = testVocabulary.length;
     if (cumulativeReviews) cumulativeReviews.textContent = todayReviewCount;
+    if (cumulativeMastered) cumulativeMastered.textContent = cumulativeMasteredCount;
+}
+
+function saveStats() {
+    const stats = {
+        todayReviewCount,
+        cumulativeMasteredCount,
+        lastUpdateDate: new Date().toDateString()
+    };
+    localStorage.setItem('vocabStats', JSON.stringify(stats));
+}
+
+function submitFeedback(status) {
+    todayReviewCount++;
+
+    // Update cumulative mastered count
+    if (status === 'mastered') {
+        cumulativeMasteredCount++;
+    }
+
+    console.log(`📝 Feedback submitted: ${status}, Today's count: ${todayReviewCount}, Total mastered: ${cumulativeMasteredCount}`);
+
+    // Save and update display
+    saveStats();
+    updateStatsDisplay();
 
     // Move to next word
     moveToNextWord();
     isFlipped = false;
-    displayEnglishSide();
+    displayEnglishSide(true); // 新单词时隐藏详细信息
 }
 
 function toggleMoreInfo() {
@@ -326,9 +364,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Initialize with first word - show English by default
+    // Initialize stats and display first word
     setTimeout(() => {
-        displayEnglishSide();
+        initializeStats();
+        displayEnglishSide(true); // 初始单词时隐藏详细信息
         console.log('✅ Simple initialization complete - showing English by default');
     }, 100);
 });
