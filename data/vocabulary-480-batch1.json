@@ -1,0 +1,342 @@
+[
+  {
+    "id": "word_041",
+    "english": "venture",
+    "chinese": "n. 风险投资；v. 冒险",
+    "phonetics": "/ˈventʃər/",
+    "difficulty": "medium",
+    "word_type": "noun_verb",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The joint venture between two companies created innovative products.",
+      "Entrepreneurs must venture into unknown markets for growth opportunities.",
+      "Business ventures require careful planning and risk assessment."
+    ],
+    "collocations": [
+      "joint venture",
+      "venture capital",
+      "business venture",
+      "risky venture"
+    ],
+    "synonyms": [
+      "enterprise",
+      "undertaking",
+      "project",
+      "investment",
+      "risk"
+    ],
+    "antonyms": [
+      "certainty",
+      "safety",
+      "security",
+      "guarantee"
+    ]
+  },
+  {
+    "id": "word_042",
+    "english": "startup",
+    "chinese": "n. 初创公司",
+    "phonetics": "/ˈstɑːtʌp/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The tech startup received funding from venture capitalists.",
+      "Startup culture emphasizes innovation and rapid growth.",
+      "Many successful companies began as small startups."
+    ],
+    "collocations": [
+      "tech startup",
+      "startup company",
+      "startup ecosystem",
+      "startup funding"
+    ],
+    "synonyms": [
+      "new business",
+      "emerging company",
+      "venture",
+      "enterprise",
+      "initiative"
+    ],
+    "antonyms": [
+      "corporation",
+      "established company",
+      "multinational",
+      "conglomerate"
+    ]
+  },
+  {
+    "id": "word_043",
+    "english": "corporation",
+    "chinese": "n. 公司，企业",
+    "phonetics": "/ˌkɔːrpəˈreɪʃn/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The multinational corporation operates in over 50 countries.",
+      "Corporate responsibility includes environmental sustainability.",
+      "Large corporations often have complex organizational structures."
+    ],
+    "collocations": [
+      "multinational corporation",
+      "corporate responsibility",
+      "public corporation",
+      "corporate culture"
+    ],
+    "synonyms": [
+      "company",
+      "enterprise",
+      "business",
+      "firm",
+      "organization"
+    ],
+    "antonyms": [
+      "individual",
+      "proprietorship",
+      "partnership",
+      "sole trader"
+    ]
+  },
+  {
+    "id": "word_044",
+    "english": "revenue",
+    "chinese": "n. 收入，收益",
+    "phonetics": "/ˈrevənuː/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The company's annual revenue exceeded expectations.",
+      "Digital advertising generates significant revenue for media companies.",
+      "Revenue growth indicates successful business performance."
+    ],
+    "collocations": [
+      "annual revenue",
+      "revenue growth",
+      "generate revenue",
+      "revenue stream"
+    ],
+    "synonyms": [
+      "income",
+      "earnings",
+      "turnover",
+      "proceeds",
+      "sales"
+    ],
+    "antonyms": [
+      "expenses",
+      "costs",
+      "losses",
+      "expenditure"
+    ]
+  },
+  {
+    "id": "word_045",
+    "english": "investment",
+    "chinese": "n. 投资",
+    "phonetics": "/ɪnˈvestmənt/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Education investment yields long-term career benefits.",
+      "Foreign investment drives economic development in emerging markets.",
+      "Real estate investment requires careful market analysis."
+    ],
+    "collocations": [
+      "foreign investment",
+      "return on investment",
+      "long-term investment",
+      "investment portfolio"
+    ],
+    "synonyms": [
+      "funding",
+      "financing",
+      "backing",
+      "capital",
+      "contribution"
+    ],
+    "antonyms": [
+      "divestment",
+      "withdrawal",
+      "disinvestment",
+      "selling"
+    ]
+  },
+  {
+    "id": "word_046",
+    "english": "profit",
+    "chinese": "n. 利润；v. 获利",
+    "phonetics": "/ˈprɒfɪt/",
+    "difficulty": "easy",
+    "word_type": "noun_verb",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The company announced record profits for the fiscal year.",
+      "Non-profit organizations focus on social impact rather than profit.",
+      "Businesses must balance profit with ethical responsibilities."
+    ],
+    "collocations": [
+      "make a profit",
+      "profit margin",
+      "net profit",
+      "gross profit"
+    ],
+    "synonyms": [
+      "gain",
+      "earnings",
+      "income",
+      "return",
+      "benefit"
+    ],
+    "antonyms": [
+      "loss",
+      "deficit",
+      "shortfall",
+      "expense"
+    ]
+  },
+  {
+    "id": "word_047",
+    "english": "merger",
+    "chinese": "n. 合并，兼并",
+    "phonetics": "/ˈmɜːrdʒər/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The merger created the largest technology company in the market.",
+      "Corporate mergers often lead to organizational restructuring.",
+      "Regulators must approve significant merger proposals."
+    ],
+    "collocations": [
+      "corporate merger",
+      "merger and acquisition",
+      "proposed merger",
+      "merger agreement"
+    ],
+    "synonyms": [
+      "amalgamation",
+      "consolidation",
+      "combination",
+      "union",
+      "integration"
+    ],
+    "antonyms": [
+      "demerger",
+      "split",
+      "division",
+      "separation"
+    ]
+  },
+  {
+    "id": "word_048",
+    "english": "acquisition",
+    "chinese": "n. 收购",
+    "phonetics": "/ˌækwɪˈzɪʃn/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The acquisition expanded the company's market presence.",
+      "Language acquisition is easier for children than adults.",
+      "Data acquisition systems collect information from various sources."
+    ],
+    "collocations": [
+      "merger and acquisition",
+      "foreign acquisition",
+      "company acquisition",
+      "skills acquisition"
+    ],
+    "synonyms": [
+      "purchase",
+      "takeover",
+      "buyout",
+      "procurement",
+      "obtainment"
+    ],
+    "antonyms": [
+      "sale",
+      "divestment",
+      "disposal",
+      "relinquishment"
+    ]
+  },
+  {
+    "id": "word_049",
+    "english": "diversification",
+    "chinese": "n. 多样化",
+    "phonetics": "/daɪˌvɜːrsɪfɪˈkeɪʃn/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Product diversification reduces business risk and market dependency.",
+      "Investment diversification spreads risk across different assets.",
+      "Cultural diversification enhances workplace creativity and innovation."
+    ],
+    "collocations": [
+      "product diversification",
+      "investment diversification",
+      "market diversification",
+      "risk diversification"
+    ],
+    "synonyms": [
+      "variation",
+      "assortment",
+      "multiplicity",
+      "range",
+      "variety"
+    ],
+    "antonyms": [
+      "specialization",
+      "concentration",
+      "uniformity",
+      "standardization"
+    ]
+  },
+  {
+    "id": "word_050",
+    "english": "expansion",
+    "chinese": "n. 扩张，扩展",
+    "phonetics": "/ɪkˈspænʃn/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "International expansion requires understanding local markets and regulations.",
+      "Urban expansion creates challenges for infrastructure and transportation.",
+      "Digital expansion enables companies to reach global customers."
+    ],
+    "collocations": [
+      "international expansion",
+      "market expansion",
+      "urban expansion",
+      "rapid expansion"
+    ],
+    "synonyms": [
+      "growth",
+      "enlargement",
+      "extension",
+      "development",
+      "broadening"
+    ],
+    "antonyms": [
+      "contraction",
+      "reduction",
+      "shrinkage",
+      "decline"
+    ]
+  }
+]

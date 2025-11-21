@@ -1,0 +1,232 @@
+[
+  {
+    "id": "word_491",
+    "english": "evaluate",
+    "chinese": "v. 评估，评价",
+    "phonetics": "/ɪˈvæljueɪt/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Students should evaluate their progress regularly.",
+      "We need to evaluate the effectiveness of the new policy.",
+      "The committee will evaluate all applications carefully."
+    ],
+    "collocations": [
+      "evaluate performance",
+      "critically evaluate",
+      "evaluate evidence",
+      "evaluate situation"
+    ],
+    "synonyms": ["assess", "judge", "analyze", "appraise", "review"],
+    "antonyms": ["ignore", "neglect", "overlook"]
+  },
+  {
+    "id": "word_492",
+    "english": "innovation",
+    "chinese": "n. 创新，革新",
+    "phonetics": "/ˌɪnəˈveɪʃn/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Technological innovation drives economic growth.",
+      "The company encourages innovation among employees.",
+      "Innovation in education is essential for progress."
+    ],
+    "collocations": [
+      "technological innovation",
+      "promote innovation",
+      "innovation strategy",
+      "breakthrough innovation"
+    ],
+    "synonyms": ["invention", "creativity", "breakthrough", "advancement"],
+    "antonyms": ["tradition", "conservatism", "stagnation"]
+  },
+  {
+    "id": "word_493",
+    "english": "sustainable",
+    "chinese": "adj. 可持续的",
+    "phonetics": "/səˈsteɪnəbl/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Sustainable development is crucial for the future.",
+      "We need sustainable energy sources.",
+      "Sustainable agriculture protects the environment."
+    ],
+    "collocations": [
+      "sustainable development",
+      "sustainable energy",
+      "environmentally sustainable",
+      "sustainable future"
+    ],
+    "synonyms": ["renewable", "environmental", "green", "eco-friendly"],
+    "antonyms": ["unsustainable", "polluting", "harmful"]
+  },
+  {
+    "id": "word_494",
+    "english": "constitute",
+    "chinese": "v. 构成，组成",
+    "phonetics": "/ˈkɒnstɪtjuːt/",
+    "difficulty": "hard",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "These factors constitute the main challenges.",
+      "The evidence constitutes proof of his innocence.",
+      "Different cultures constitute our diverse society."
+    ],
+    "collocations": [
+      "constitute evidence",
+      "constitute threat",
+      "constitute majority",
+      "constitute basis"
+    ],
+    "synonyms": ["form", "make up", "comprise", "establish", "represent"],
+    "antonyms": ["destroy", "dismantle", "deconstruct"]
+  },
+  {
+    "id": "word_495",
+    "english": "paradigm",
+    "chinese": "n. 范例，模式",
+    "phonetics": "/ˈpærədaɪm/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The discovery created a new paradigm in physics.",
+      "We need a paradigm shift in education.",
+      "The old paradigm no longer works in modern society."
+    ],
+    "collocations": [
+      "paradigm shift",
+      "new paradigm",
+      "dominant paradigm",
+      "paradigm change"
+    ],
+    "synonyms": ["model", "pattern", "framework", "example", "standard"],
+    "antonyms": ["exception", "anomaly", "irregularity"]
+  },
+  {
+    "id": "word_496",
+    "english": "methodology",
+    "chinese": "n. 方法论，方法学",
+    "phonetics": "/ˌmeθəˈdɒlədʒi/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The research methodology was carefully designed.",
+      "Scientific methodology requires precise procedures.",
+      "Different teaching methodologies produce different results."
+    ],
+    "collocations": [
+      "research methodology",
+      "scientific methodology",
+      "teaching methodology",
+      "adopt methodology"
+    ],
+    "synonyms": ["approach", "method", "technique", "procedure", "framework"],
+    "antonyms": ["disorganization", "chaos", "randomness"]
+  },
+  {
+    "id": "word_497",
+    "english": "substantial",
+    "chinese": "adj. 大量的，实质性的",
+    "phonetics": "/səbˈstænʃl/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "There has been substantial improvement in test scores.",
+      "The project requires substantial investment.",
+      "Substantial evidence supports the theory."
+    ],
+    "collocations": [
+      "substantial evidence",
+      "substantial amount",
+      "substantial improvement",
+      "substantial increase"
+    ],
+    "synonyms": ["significant", "considerable", "major", "large", "important"],
+    "antonyms": ["insignificant", "minor", "trivial", "negligible"]
+  },
+  {
+    "id": "word_498",
+    "english": "efficiently",
+    "chinese": "adv. 高效地，有效地",
+    "phonetics": "/ɪˈfɪʃəntli/",
+    "difficulty": "easy",
+    "word_type": "adverb",
+    "category": "general",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The team works efficiently to meet deadlines.",
+      "We need to use resources more efficiently.",
+      "Modern technology helps people work more efficiently."
+    ],
+    "collocations": [
+      "work efficiently",
+      "use efficiently",
+      "operate efficiently",
+      "manage efficiently"
+    ],
+    "synonyms": ["effectively", "productively", "competently", "capably"],
+    "antonyms": ["inefficiently", "poorly", "ineffectively"]
+  },
+  {
+    "id": "word_499",
+    "english": "nevertheless",
+    "chinese": "adv. 然而，不过",
+    "phonetics": "/ˌnevərðəˈles/",
+    "difficulty": "medium",
+    "word_type": "adverb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The task was difficult; nevertheless, we completed it.",
+      "He was tired; nevertheless, he continued working.",
+      "The evidence is weak; nevertheless, the conclusion seems valid."
+    ],
+    "collocations": [
+      "nevertheless, it is",
+      "but nevertheless",
+      "however nevertheless",
+      "despite nevertheless"
+    ],
+    "synonyms": ["however", "yet", "still", "nonetheless", "despite that"],
+    "antonyms": ["therefore", "consequently", "accordingly"]
+  },
+  {
+    "id": "word_500",
+    "english": "revolutionary",
+    "chinese": "adj. 革命性的，创新的",
+    "phonetics": "/ˌrevəˈluːʃəneri/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The invention was revolutionary for the industry.",
+      "Revolutionary ideas often face initial resistance.",
+      "Technology has brought revolutionary changes to communication."
+    ],
+    "collocations": [
+      "revolutionary idea",
+      "revolutionary change",
+      "revolutionary technology",
+      "revolutionary approach"
+    ],
+    "synonyms": ["innovative", "groundbreaking", "transformative", "radical"],
+    "antonyms": ["traditional", "conventional", "conservative"]
+  }
+]

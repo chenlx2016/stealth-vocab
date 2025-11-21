@@ -1,0 +1,342 @@
+[
+  {
+    "id": "word_011",
+    "english": "advocate",
+    "chinese": "v. 提倡，支持；n. 提倡者",
+    "phonetics": "/ˈædvəkeɪt/",
+    "difficulty": "medium",
+    "word_type": "verb_noun",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Many experts advocate for renewable energy sources.",
+      "She is a strong advocate of environmental protection.",
+      "The organization advocates for educational reform."
+    ],
+    "collocations": [
+      "advocate for",
+      "strong advocate",
+      "public advocate",
+      "advocate change"
+    ],
+    "synonyms": [
+      "support",
+      "promote",
+      "champion",
+      "defend",
+      "back"
+    ],
+    "antonyms": [
+      "oppose",
+      "reject",
+      "disapprove",
+      "discourage"
+    ]
+  },
+  {
+    "id": "word_012",
+    "english": "benefit",
+    "chinese": "n. 好处，利益；v. 受益",
+    "phonetics": "/ˈbenɪfɪt/",
+    "difficulty": "easy",
+    "word_type": "noun_verb",
+    "category": "general",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Regular exercise has many health benefits.",
+      "Students benefit from smaller class sizes.",
+      "The new policy will benefit the entire community."
+    ],
+    "collocations": [
+      "health benefits",
+      "benefit from",
+      "mutual benefit",
+      "maximum benefit"
+    ],
+    "synonyms": [
+      "advantage",
+      "profit",
+      "gain",
+      "improvement",
+      "merit"
+    ],
+    "antonyms": [
+      "disadvantage",
+      "drawback",
+      "harm",
+      "loss"
+    ]
+  },
+  {
+    "id": "word_013",
+    "english": "challenge",
+    "chinese": "n. 挑战；v. 挑战",
+    "phonetics": "/ˈtʃælɪndʒ/",
+    "difficulty": "easy",
+    "word_type": "noun_verb",
+    "category": "general",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Learning a new language presents many challenges.",
+      "The team faces significant challenges in the project.",
+      "Students need to challenge themselves intellectually."
+    ],
+    "collocations": [
+      "face challenges",
+      "accept challenge",
+      "major challenge",
+      "challenge someone"
+    ],
+    "synonyms": [
+      "difficulty",
+      "obstacle",
+      "test",
+      "trial",
+      "problem"
+    ],
+    "antonyms": [
+      "advantage",
+      "opportunity",
+      "solution",
+      "benefit"
+    ]
+  },
+  {
+    "id": "word_014",
+    "english": "consequence",
+    "chinese": "n. 结果，后果",
+    "phonetics": "/ˈkɒnsɪkwens/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Climate change has serious consequences for the planet.",
+      "Students must understand the consequences of plagiarism.",
+      "The economic consequences were felt worldwide."
+    ],
+    "collocations": [
+      "negative consequences",
+      "face consequences",
+      "as a consequence",
+      "direct consequence"
+    ],
+    "synonyms": [
+      "result",
+      "outcome",
+      "effect",
+      "impact",
+      "repercussion"
+    ],
+    "antonyms": [
+      "cause",
+      "origin",
+      "reason",
+      "source"
+    ]
+  },
+  {
+    "id": "word_015",
+    "english": "demonstrate",
+    "chinese": "v. 证明，展示，演示",
+    "phonetics": "/ˈdemənstreɪt/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The study demonstrates the importance of sleep.",
+      "Students must demonstrate their understanding through essays.",
+      "Scientists demonstrate their findings with clear evidence."
+    ],
+    "collocations": [
+      "demonstrate knowledge",
+      "clearly demonstrate",
+      "experiment demonstrates",
+      "demonstrate ability"
+    ],
+    "synonyms": [
+      "show",
+      "prove",
+      "illustrate",
+      "exhibit",
+      "display"
+    ],
+    "antonyms": [
+      "hide",
+      "conceal",
+      "obscure",
+      "disprove"
+    ]
+  },
+  {
+    "id": "word_016",
+    "english": "establish",
+    "chinese": "v. 建立，确立",
+    "phonetics": "/ɪˈstæblɪʃ/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The university was established in 1965.",
+      "Researchers need to establish clear methodology.",
+      "Companies should establish good relationships with customers."
+    ],
+    "collocations": [
+      "establish relationship",
+      "well-established",
+      "establish fact",
+      "establish company"
+    ],
+    "synonyms": [
+      "create",
+      "found",
+      "set up",
+      "institute",
+      "form"
+    ],
+    "antonyms": [
+      "destroy",
+      "demolish",
+      "abolish",
+      "eliminate"
+    ]
+  },
+  {
+    "id": "word_017",
+    "english": "factor",
+    "chinese": "n. 因素，要素",
+    "phonetics": "/ˈfæktər/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Economic factors influence consumer behavior.",
+      "Weather is an important factor in agriculture.",
+      "Multiple factors contribute to academic success."
+    ],
+    "collocations": [
+      "key factor",
+      "important factor",
+      "contributing factor",
+      "deciding factor"
+    ],
+    "synonyms": [
+      "element",
+      "component",
+      "aspect",
+      "variable",
+      "consideration"
+    ],
+    "antonyms": [
+      "result",
+      "outcome",
+      "effect",
+      "consequence"
+    ]
+  },
+  {
+    "id": "word_018",
+    "english": "illustrate",
+    "chinese": "v. 说明，阐明，例证",
+    "phonetics": "/ˈɪləstreɪt/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The diagram illustrates the water cycle.",
+      "Examples help illustrate complex concepts.",
+      "Statistics illustrate the trends in student performance."
+    ],
+    "collocations": [
+      "illustrate point",
+      "clearly illustrate",
+      "example illustrates",
+      "graph illustrates"
+    ],
+    "synonyms": [
+      "explain",
+      "show",
+      "demonstrate",
+      "clarify",
+      "exemplify"
+    ],
+    "antonyms": [
+      "obscure",
+      "confuse",
+      "complicate",
+      "mystify"
+    ]
+  },
+  {
+    "id": "word_019",
+    "english": "maintain",
+    "chinese": "v. 维持，保持",
+    "phonetics": "/meɪnˈteɪn/",
+    "difficulty": "easy",
+    "word_type": "verb",
+    "category": "general",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "It's important to maintain a healthy lifestyle.",
+      "Companies must maintain quality standards.",
+      "Students need to maintain focus during exams."
+    ],
+    "collocations": [
+      "maintain standards",
+      "maintain relationship",
+      "maintain health",
+      "maintain balance"
+    ],
+    "synonyms": [
+      "preserve",
+      "sustain",
+      "keep",
+      "uphold",
+      "continue"
+    ],
+    "antonyms": [
+      "neglect",
+      "abandon",
+      "lose",
+      "discontinue"
+    ]
+  },
+  {
+    "id": "word_020",
+    "english": "approach",
+    "chinese": "n. 方法；v. 接近，处理",
+    "phonetics": "/əˈproʊtʃ/",
+    "difficulty": "easy",
+    "word_type": "noun_verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "We need a systematic approach to problem-solving.",
+      "The deadline is approaching quickly.",
+      "Different cultures approach education differently."
+    ],
+    "collocations": [
+      "systematic approach",
+      "approach problem",
+      "traditional approach",
+      "approach deadline"
+    ],
+    "synonyms": [
+      "method",
+      "strategy",
+      "technique",
+      "way",
+      "manner"
+    ],
+    "antonyms": [
+      "avoid",
+      "retreat",
+      "withdraw",
+      "recede"
+    ]
+  }
+]

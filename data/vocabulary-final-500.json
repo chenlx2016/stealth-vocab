@@ -1,0 +1,682 @@
+[
+  {
+    "id": "word_481",
+    "english": "sustainability",
+    "chinese": "n. 可持续性",
+    "phonetics": "/səˌsteɪnəˈbɪləti/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Environmental sustainability requires long-term planning and commitment.",
+      "Sustainability is becoming a key consideration in business strategies.",
+      "Sustainable development balances economic growth with environmental protection."
+    ],
+    "collocations": [
+      "environmental sustainability",
+      "sustainable development",
+      "economic sustainability",
+      "promote sustainability"
+    ],
+    "synonyms": [
+      "durability",
+      "viability",
+      "endurance",
+      "continuity",
+      "long-term"
+    ],
+    "antonyms": [
+      "unsustainability",
+      "short-term",
+      "temporary",
+      "exhaustion"
+    ]
+  },
+  {
+    "id": "word_482",
+    "english": "globalization",
+    "chinese": "n. 全球化",
+    "phonetics": "/ˌɡloʊbələˈzeɪʃn/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Globalization has transformed international trade and communication.",
+      "Economic globalization creates both opportunities and challenges.",
+      "Cultural globalization influences lifestyles worldwide."
+    ],
+    "collocations": [
+      "economic globalization",
+      "cultural globalization",
+      "process of globalization",
+      "impact of globalization"
+    ],
+    "synonyms": [
+      "internationalization",
+      "worldwide integration",
+      "global integration",
+      "universalism",
+      "cosmopolitanism"
+    ],
+    "antonyms": [
+      "localization",
+      "protectionism",
+      "isolationism",
+      "nationalism"
+    ]
+  },
+  {
+    "id": "word_483",
+    "english": "infrastructure",
+    "chinese": "n. 基础设施",
+    "phonetics": "/ˈɪnfrəˌstrʌktʃər/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Digital infrastructure supports modern communication systems.",
+      "Transport infrastructure connects cities and facilitates trade.",
+      "Government investment in infrastructure stimulates economic growth."
+    ],
+    "collocations": [
+      "digital infrastructure",
+      "transport infrastructure",
+      "public infrastructure",
+      "infrastructure development"
+    ],
+    "synonyms": [
+      "framework",
+      "foundation",
+      "system",
+      "structure",
+      "facilities"
+    ],
+    "antonyms": [
+      "superstructure",
+      "decoration",
+      "finishing",
+      "ornamentation"
+    ]
+  },
+  {
+    "id": "word_484",
+    "english": "innovation",
+    "chinese": "n. 创新",
+    "phonetics": "/ˌɪnəˈveɪʃn/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Technological innovation drives economic development and progress.",
+      "Companies invest in research and development for innovation.",
+      "Innovation in education transforms traditional teaching methods."
+    ],
+    "collocations": [
+      "technological innovation",
+      "foster innovation",
+      "innovation strategy",
+      "breakthrough innovation"
+    ],
+    "synonyms": [
+      "invention",
+      "creativity",
+      "advancement",
+      "novelty",
+      "progress"
+    ],
+    "antonyms": [
+      "tradition",
+      "conservatism",
+      "stagnation",
+      "conformity"
+    ]
+  },
+  {
+    "id": "word_485",
+    "english": "diversity",
+    "chinese": "n. 多样性",
+    "phonetics": "/daɪˈvɜːrsəti/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "social",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Cultural diversity enriches educational environments.",
+      "Biodiversity is essential for ecosystem health.",
+      "Companies benefit from workplace diversity and inclusion."
+    ],
+    "collocations": [
+      "cultural diversity",
+      "biological diversity",
+      "promote diversity",
+      "value diversity"
+    ],
+    "synonyms": [
+      "variety",
+      "difference",
+      "multiplicity",
+      "range",
+      "heterogeneity"
+    ],
+    "antonyms": [
+      "uniformity",
+      "homogeneity",
+      "similarity",
+      "consistency"
+    ]
+  },
+  {
+    "id": "word_486",
+    "english": "entrepreneurship",
+    "chinese": "n. 企业家精神",
+    "phonetics": "/ˌɒntrəprəˈnɜːrʃɪp/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Entrepreneurship requires innovation, risk-taking, and determination.",
+      "Business schools promote entrepreneurship education and training.",
+      "Social entrepreneurship addresses community problems through business solutions."
+    ],
+    "collocations": [
+      "social entrepreneurship",
+      "promote entrepreneurship",
+      "entrepreneurship education",
+      "entrepreneurial spirit"
+    ],
+    "synonyms": [
+      "enterprise",
+      "initiative",
+      "venturesomeness",
+      "innovation",
+      "leadership"
+    ],
+    "antonyms": [
+      "conformity",
+      "conservatism",
+      "risk-aversion",
+      "bureaucracy"
+    ]
+  },
+  {
+    "id": "word_487",
+    "english": "cybersecurity",
+    "chinese": "n. 网络安全",
+    "phonetics": "/ˈsaɪbərsɪˌkjʊrəti/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Cybersecurity protects digital systems from unauthorized access.",
+      "Companies invest heavily in cybersecurity to protect customer data.",
+      "Cybersecurity threats require constant monitoring and updating."
+    ],
+    "collocations": [
+      "cybersecurity measures",
+      "cybersecurity threat",
+      "information security",
+      "cyber attack"
+    ],
+    "synonyms": [
+      "information security",
+      "data protection",
+      "network security",
+      "digital security",
+      "online protection"
+    ],
+    "antonyms": [
+      "vulnerability",
+      "insecurity",
+      "exposure",
+      "risk"
+    ]
+  },
+  {
+    "id": "word_488",
+    "english": "digitalization",
+    "chinese": "n. 数字化",
+    "phonetics": "/ˌdɪdʒɪtəlaɪˈzeɪʃn/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Digitalization transforms traditional business processes.",
+      "Digitalization of education enhances learning accessibility.",
+      "Industry digitalization improves efficiency and productivity."
+    ],
+    "collocations": [
+      "digital transformation",
+      "digitalization process",
+      "business digitalization",
+      "educational digitalization"
+    ],
+    "synonyms": [
+      "digitization",
+      "computerization",
+      "automation",
+      "modernization",
+      "technological advancement"
+    ],
+    "antonyms": [
+      "manual processes",
+      "traditional methods",
+      "analog systems",
+      "paper-based"
+    ]
+  },
+  {
+    "id": "word_489",
+    "english": "blockchain",
+    "chinese": "n. 区块链",
+    "phonetics": "/ˈblɒktʃeɪn/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "low",
+    "example_sentences": [
+      "Blockchain technology ensures secure and transparent transactions.",
+      "Cryptocurrency relies on blockchain for decentralized validation.",
+      "Supply chain management benefits from blockchain traceability."
+    ],
+    "collocations": [
+      "blockchain technology",
+      "blockchain network",
+      "distributed blockchain",
+      "blockchain security"
+    ],
+    "synonyms": [
+      "distributed ledger",
+      "cryptographic ledger",
+      "decentralized database",
+      "digital ledger",
+      "chain of blocks"
+    ],
+    "antonyms": [
+      "centralized system",
+      "traditional database",
+      "single point of failure",
+      "hierarchical structure"
+    ]
+  },
+  {
+    "id": "word_490",
+    "english": "cryptocurrency",
+    "chinese": "n. 加密货币",
+    "phonetics": "/ˌkrɪptəˈkʌrənsi/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "low",
+    "example_sentences": [
+      "Bitcoin became the first widely adopted cryptocurrency.",
+      "Cryptocurrency markets experience high volatility and risk.",
+      "Central banks explore digital currencies as cryptocurrency alternatives."
+    ],
+    "collocations": [
+      "digital currency",
+      "virtual currency",
+      "crypto market",
+      "cryptocurrency trading"
+    ],
+    "synonyms": [
+      "digital currency",
+      "virtual currency",
+      "crypto asset",
+      "digital token",
+      "electronic money"
+    ],
+    "antonyms": [
+      "physical currency",
+      "cash",
+      "traditional money",
+      "fiat currency"
+    ]
+  },
+  {
+    "id": "word_491",
+    "english": "big data",
+    "chinese": "n. 大数据",
+    "phonetics": "/bɪɡ ˈdeɪtə/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Big data analytics helps companies understand customer behavior patterns.",
+      "Healthcare uses big data to improve treatment and research outcomes.",
+      "Big data processing requires specialized infrastructure and algorithms."
+    ],
+    "collocations": [
+      "big data analytics",
+      "big data processing",
+      "big data infrastructure",
+      "data mining"
+    ],
+    "synonyms": [
+      "massive datasets",
+      "large-scale data",
+      "data analytics",
+      "data science",
+      "information overload"
+    ],
+    "antonyms": [
+      "small data",
+      "limited data",
+      "insufficient data",
+      "data scarcity"
+    ]
+  },
+  {
+    "id": "word_492",
+    "english": "machine learning",
+    "chinese": "n. 机器学习",
+    "phonetics": "/məˈʃiːn ˈlɜːrnɪŋ/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Machine learning algorithms can identify patterns in large datasets.",
+      "Artificial intelligence relies heavily on machine learning techniques.",
+      "Machine learning powers recommendation systems in online platforms."
+    ],
+    "collocations": [
+      "machine learning algorithms",
+      "deep learning",
+      "neural networks",
+      "predictive analytics"
+    ],
+    "synonyms": [
+      "artificial intelligence",
+      "AI algorithms",
+      "automated learning",
+      "pattern recognition",
+      "predictive modeling"
+    ],
+    "antonyms": [
+      "manual programming",
+      "rule-based systems",
+      "static algorithms",
+      "traditional computing"
+    ]
+  },
+  {
+    "id": "word_493",
+    "english": "renewable energy",
+    "chinese": "n. 可再生能源",
+    "phonetics": "/rɪˈnjuːəbl ˈenərdʒi/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Renewable energy sources include solar, wind, and hydroelectric power.",
+      "Countries invest in renewable energy to reduce carbon emissions.",
+      "Renewable energy technology continues to improve efficiency and storage."
+    ],
+    "collocations": [
+      "solar energy",
+      "wind power",
+      "clean energy",
+      "sustainable energy"
+    ],
+    "synonyms": [
+      "clean energy",
+      "sustainable energy",
+      "green energy",
+      "alternative energy",
+      "eco-friendly power"
+    ],
+    "antonyms": [
+      "fossil fuels",
+      "non-renewable energy",
+      "traditional energy",
+      "carbon-based energy"
+    ]
+  },
+  {
+    "id": "word_494",
+    "english": "carbon footprint",
+    "chinese": "n. 碳足迹",
+    "phonetics": "/ˈkɑːrbən ˈfʊtprɪnt/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "environmental",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Reducing carbon footprint is essential for environmental sustainability.",
+      "Companies calculate carbon footprint to measure environmental impact.",
+      "Individuals can lower carbon footprint through lifestyle changes."
+    ],
+    "collocations": [
+      "reduce carbon footprint",
+      "carbon emissions",
+      "environmental impact",
+      "sustainable practices"
+    ],
+    "synonyms": [
+      "environmental impact",
+      "carbon emissions",
+      "ecological footprint",
+      "greenhouse gas emissions",
+      "carbon output"
+    ],
+    "antonyms": [
+      "carbon neutrality",
+      "carbon offset",
+      "environmental restoration",
+      "ecological balance"
+    ]
+  },
+  {
+    "id": "word_495",
+    "english": "climate change",
+    "chinese": "n. 气候变化",
+    "phonetics": "/ˈklaɪmət tʃeɪndʒ/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "environmental",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Climate change affects weather patterns worldwide.",
+      "International cooperation is necessary to address climate change.",
+      "Climate change mitigation requires immediate and long-term strategies."
+    ],
+    "collocations": [
+      "global warming",
+      "climate action",
+      "environmental protection",
+      "carbon reduction"
+    ],
+    "synonyms": [
+      "global warming",
+      "environmental change",
+      "climate disruption",
+      "weather alteration",
+      "atmospheric change"
+    ],
+    "antonyms": [
+      "climate stability",
+      "weather consistency",
+      "environmental equilibrium",
+      "atmospheric balance"
+    ]
+  },
+  {
+    "id": "word_496",
+    "english": "artificial intelligence",
+    "chinese": "n. 人工智能",
+    "phonetics": "/ˌɑːrtɪfɪʃl ɪnˈtelɪdʒəns/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Artificial intelligence transforms healthcare diagnosis and treatment.",
+      "AI algorithms improve business decision-making and automation.",
+      "Ethical considerations guide artificial intelligence development."
+    ],
+    "collocations": [
+      "machine learning",
+      "deep learning",
+      "neural networks",
+      "AI applications"
+    ],
+    "synonyms": [
+      "AI",
+      "machine intelligence",
+      "automated reasoning",
+      "cognitive computing",
+      "intelligent systems"
+    ],
+    "antonyms": [
+      "natural intelligence",
+      "human cognition",
+      "biological intelligence",
+      "organic thinking"
+    ]
+  },
+  {
+    "id": "word_497",
+    "english": "virtual reality",
+    "chinese": "n. 虚拟现实",
+    "phonetics": "/ˈvɜːrtʃuəl riˈæləti/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Virtual reality creates immersive educational experiences.",
+      "VR technology enhances gaming and entertainment applications.",
+      "Medical training uses virtual reality for realistic simulations."
+    ],
+    "collocations": [
+      "VR headset",
+      "immersive experience",
+      "virtual environment",
+      "augmented reality"
+    ],
+    "synonyms": [
+      "VR",
+      "virtual environments",
+      "digital reality",
+      "simulated reality",
+      "immersive technology"
+    ],
+    "antonyms": [
+      "physical reality",
+      "actual world",
+      "real environment",
+      "concrete experience"
+    ]
+  },
+  {
+    "id": "word_498",
+    "english": "quantum computing",
+    "chinese": "n. 量子计算",
+    "phonetics": "/ˈkwɒntəm kəmˈpjuːtɪŋ/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "low",
+    "example_sentences": [
+      "Quantum computing promises revolutionary computational power.",
+      "Research advances quantum computing applications in cryptography.",
+      "Quantum computers could solve complex optimization problems efficiently."
+    ],
+    "collocations": [
+      "quantum mechanics",
+      "quantum supremacy",
+      "quantum algorithms",
+      "quantum processors"
+    ],
+    "synonyms": [
+      "quantum processing",
+      "quantum computation",
+      "quantum information processing",
+      "quantum technology",
+      "quantum mechanics applications"
+    ],
+    "antonyms": [
+      "classical computing",
+      "traditional computing",
+      "binary computing",
+      "conventional computers"
+    ]
+  },
+  {
+    "id": "word_499",
+    "english": "biotechnology",
+    "chinese": "n. 生物技术",
+    "phonetics": "/ˌbaɪoʊtekˈnɒlədʒi/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Biotechnology advances medical treatments and pharmaceutical development.",
+      "Genetic engineering applications transform agricultural biotechnology.",
+      "Biotechnology research leads to breakthrough treatments for diseases."
+    ],
+    "collocations": [
+      "genetic engineering",
+      "medical biotechnology",
+      "agricultural biotechnology",
+      "biotech industry"
+    ],
+    "synonyms": [
+      "biotech",
+      "genetic engineering",
+      "life sciences",
+      "biological technology",
+      "genetic manipulation"
+    ],
+    "antonyms": [
+      "traditional agriculture",
+      "conventional medicine",
+      "natural processes",
+      "organic farming"
+    ]
+  },
+  {
+    "id": "word_500",
+    "english": "nanotechnology",
+    "chinese": "n. 纳米技术",
+    "phonetics": "/ˌnænoʊtekˈnɒlədʒi/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "low",
+    "example_sentences": [
+      "Nanotechnology enables manipulation of materials at molecular scale.",
+      "Medical applications of nanotechnology include targeted drug delivery.",
+      "Nanotechnology innovations improve materials science and electronics."
+    ],
+    "collocations": [
+      "nanomaterials",
+      "nanoparticles",
+      "molecular scale",
+      "nanoengineering"
+    ],
+    "synonyms": [
+      "nanotech",
+      "molecular engineering",
+      "molecular manufacturing",
+      "microtechnology",
+      "molecular science"
+    ],
+    "antonyms": [
+      "macro-scale technology",
+      "traditional manufacturing",
+      "conventional materials",
+      "bulk material processing"
+    ]
+  }
+]

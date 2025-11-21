@@ -1,0 +1,688 @@
+[
+  {
+    "id": "word_021",
+    "english": "significant",
+    "chinese": "adj. 重要的，显著的",
+    "phonetics": "/sɪɡˈnɪfɪkənt/",
+    "difficulty": "easy",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Climate change has significant effects on the environment.",
+      "The research revealed significant differences between the two groups.",
+      "There has been a significant increase in online education."
+    ],
+    "collocations": [
+      "significant impact",
+      "significant difference",
+      "significant increase",
+      "significant role"
+    ],
+    "synonyms": [
+      "important",
+      "major",
+      "considerable",
+      "substantial",
+      "notable"
+    ],
+    "antonyms": [
+      "insignificant",
+      "minor",
+      "trivial",
+      "negligible"
+    ]
+  },
+  {
+    "id": "word_022",
+    "english": "hypothesis",
+    "chinese": "n. 假设，假说",
+    "phonetics": "/haɪˈpɒθəsɪs/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The scientist proposed a hypothesis to explain the experimental results.",
+      "Researchers test hypotheses through systematic experimentation.",
+      "A good hypothesis must be testable and falsifiable."
+    ],
+    "collocations": [
+      "test hypothesis",
+      "propose hypothesis",
+      "research hypothesis",
+      "formulate hypothesis"
+    ],
+    "synonyms": [
+      "theory",
+      "assumption",
+      "supposition",
+      "postulate",
+      "premise"
+    ],
+    "antonyms": [
+      "fact",
+      "conclusion",
+      "evidence",
+      "proof"
+    ]
+  },
+  {
+    "id": "word_023",
+    "english": "methodology",
+    "chinese": "n. 方法论",
+    "phonetics": "/ˌmeθəˈdɒlədʒi/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The research methodology included both qualitative and quantitative approaches.",
+      "Proper methodology ensures reliable and valid research results.",
+      "Scholars must justify their choice of methodology in academic papers."
+    ],
+    "collocations": [
+      "research methodology",
+      "scientific methodology",
+      "qualitative methodology",
+      "methodology section"
+    ],
+    "synonyms": [
+      "approach",
+      "technique",
+      "procedure",
+      "framework",
+      "system"
+    ],
+    "antonyms": [
+      "chaos",
+      "randomness",
+      "disorganization",
+      "haphazardness"
+    ]
+  },
+  {
+    "id": "word_024",
+    "english": "theoretical",
+    "chinese": "adj. 理论的",
+    "phonetics": "/ˌθɪəˈretɪkl/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Theoretical physics explores fundamental principles of the universe.",
+      "Students must understand theoretical concepts before practical applications.",
+      "Theoretical knowledge provides a foundation for empirical research."
+    ],
+    "collocations": [
+      "theoretical framework",
+      "theoretical approach",
+      "theoretical analysis",
+      "purely theoretical"
+    ],
+    "synonyms": [
+      "conceptual",
+      "abstract",
+      "philosophical",
+      "speculative",
+      "academic"
+    ],
+    "antonyms": [
+      "practical",
+      "empirical",
+      "applied",
+      "experimental",
+      "concrete"
+    ]
+  },
+  {
+    "id": "word_025",
+    "english": "paradigm",
+    "chinese": "n. 范式，模式",
+    "phonetics": "/ˈpærədaɪm/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The scientific revolution shifted the prevailing paradigm in physics.",
+      "Educational paradigms are evolving with digital technology.",
+      "A paradigm shift occurred in understanding mental health treatment."
+    ],
+    "collocations": [
+      "paradigm shift",
+      "new paradigm",
+      "dominant paradigm",
+      "research paradigm"
+    ],
+    "synonyms": [
+      "model",
+      "pattern",
+      "framework",
+      "example",
+      "standard"
+    ],
+    "antonyms": [
+      "exception",
+      "anomaly",
+      "deviation",
+      "irregularity"
+    ]
+  },
+  {
+    "id": "word_026",
+    "english": "empirical",
+    "chinese": "adj. 经验的，实证的",
+    "phonetics": "/ɪmˈpɪrɪkl/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Empirical evidence supports the effectiveness of this teaching method.",
+      "Scientists rely on empirical data to validate their theories.",
+      "The study provided empirical insights into consumer behavior."
+    ],
+    "collocations": [
+      "empirical evidence",
+      "empirical research",
+      "empirical data",
+      "empirical analysis"
+    ],
+    "synonyms": [
+      "experimental",
+      "observational",
+      "practical",
+      "experiential",
+      "data-driven"
+    ],
+    "antonyms": [
+      "theoretical",
+      "speculative",
+      "hypothetical",
+      "abstract",
+      "conceptual"
+    ]
+  },
+  {
+    "id": "word_027",
+    "english": "quantitative",
+    "chinese": "adj. 定量的，数量的",
+    "phonetics": "/ˈkwɒntɪtətɪv/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Quantitative research involves statistical analysis of numerical data.",
+      "The study used quantitative methods to measure performance metrics.",
+      "Quantitative analysis provides objective evidence for decision-making."
+    ],
+    "collocations": [
+      "quantitative analysis",
+      "quantitative research",
+      "quantitative data",
+      "quantitative methods"
+    ],
+    "synonyms": [
+      "numerical",
+      "statistical",
+      "measurable",
+      "mathematical",
+      "computational"
+    ],
+    "antonyms": [
+      "qualitative",
+      "descriptive",
+      "subjective",
+      "interpretive",
+      "narrative"
+    ]
+  },
+  {
+    "id": "word_028",
+    "english": "qualitative",
+    "chinese": "adj. 定性的，质的",
+    "phonetics": "/ˈkwɒlɪtətɪv/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Qualitative research explores experiences through in-depth interviews.",
+      "The qualitative analysis revealed important patterns in student responses.",
+      "Qualitative data provides rich insights into human behavior."
+    ],
+    "collocations": [
+      "qualitative analysis",
+      "qualitative research",
+      "qualitative data",
+      "qualitative methods"
+    ],
+    "synonyms": [
+      "descriptive",
+      "interpretive",
+      "observational",
+      "subjective",
+      "narrative"
+    ],
+    "antonyms": [
+      "quantitative",
+      "numerical",
+      "statistical",
+      "measurable",
+      "mathematical"
+    ]
+  },
+  {
+    "id": "word_029",
+    "english": "algorithm",
+    "chinese": "n. 算法",
+    "phonetics": "/ˈælɡərɪðəm/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Search engines use complex algorithms to rank web pages.",
+      "Machine learning algorithms can identify patterns in large datasets.",
+      "Computer scientists develop efficient algorithms for data processing."
+    ],
+    "collocations": [
+      "search algorithm",
+      "machine learning algorithm",
+      "algorithm design",
+      "complex algorithm"
+    ],
+    "synonyms": [
+      "procedure",
+      "process",
+      "method",
+      "formula",
+      "protocol"
+    ],
+    "antonyms": [
+      "randomness",
+      "chaos",
+      "disorder",
+      "intuition"
+    ]
+  },
+  {
+    "id": "word_030",
+    "english": "artificial",
+    "chinese": "adj. 人工的，人造的",
+    "phonetics": "/ˌɑːtɪˈfɪʃl/",
+    "difficulty": "easy",
+    "word_type": "adjective",
+    "category": "technology",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Artificial intelligence is transforming many industries.",
+      "Artificial flowers look beautiful but require no maintenance.",
+      "The experiment used artificial conditions to control variables."
+    ],
+    "collocations": [
+      "artificial intelligence",
+      "artificial sweeteners",
+      "artificial light",
+      "artificial materials"
+    ],
+    "synonyms": [
+      "synthetic",
+      "manufactured",
+      "man-made",
+      "created",
+      "fabricated"
+    ],
+    "antonyms": [
+      "natural",
+      "real",
+      "authentic",
+      "genuine",
+      "organic"
+    ]
+  },
+  {
+    "id": "word_031",
+    "english": "intelligence",
+    "chinese": "n. 智力，智能",
+    "phonetics": "/ɪnˈtelɪdʒəns/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Artificial intelligence can process information faster than humans.",
+      "Emotional intelligence is crucial for effective leadership.",
+      "Intelligence tests measure various cognitive abilities."
+    ],
+    "collocations": [
+      "artificial intelligence",
+      "emotional intelligence",
+      "human intelligence",
+      "intelligence quotient"
+    ],
+    "synonyms": [
+      "intellect",
+      "smartness",
+      "brightness",
+      "cleverness",
+      "wisdom"
+    ],
+    "antonyms": [
+      "stupidity",
+      "ignorance",
+      "foolishness",
+      "dullness"
+    ]
+  },
+  {
+    "id": "word_032",
+    "english": "simulation",
+    "chinese": "n. 模拟，仿真",
+    "phonetics": "/ˌsɪmjuˈleɪʃn/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Computer simulations help predict weather patterns accurately.",
+      "Flight simulators train pilots in safe, controlled environments.",
+      "The economic simulation models various market scenarios."
+    ],
+    "collocations": [
+      "computer simulation",
+      "flight simulation",
+      "simulation model",
+      "realistic simulation"
+    ],
+    "synonyms": [
+      "modeling",
+      "emulation",
+      "imitation",
+      "reproduction",
+      "representation"
+    ],
+    "antonyms": [
+      "reality",
+      "authenticity",
+      "genuine experience",
+      "actual occurrence"
+    ]
+  },
+  {
+    "id": "word_033",
+    "english": "framework",
+    "chinese": "n. 框架，体系",
+    "phonetics": "/ˈfreɪmwɜːk/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The theoretical framework guided the research design and methodology.",
+      "Legal frameworks protect intellectual property rights worldwide.",
+      "Educational frameworks define learning outcomes and assessment criteria."
+    ],
+    "collocations": [
+      "theoretical framework",
+      "legal framework",
+      "conceptual framework",
+      "regulatory framework"
+    ],
+    "synonyms": [
+      "structure",
+      "system",
+      "outline",
+      "scheme",
+      "model"
+    ],
+    "antonyms": [
+      "chaos",
+      "disorder",
+      "randomness",
+      "flexibility"
+    ]
+  },
+  {
+    "id": "word_034",
+    "english": "phenomenon",
+    "chinese": "n. 现象",
+    "phonetics": "/fəˈnɒmɪnən/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Climate change is a complex phenomenon requiring global cooperation.",
+      "Social media has created new communication phenomena.",
+      "The butterfly effect demonstrates chaotic phenomena in nature."
+    ],
+    "collocations": [
+      "natural phenomenon",
+      "social phenomenon",
+      "psychological phenomenon",
+      "rare phenomenon"
+    ],
+    "synonyms": [
+      "occurrence",
+      "event",
+      "manifestation",
+      "development",
+      "circumstance"
+    ],
+    "antonyms": [
+      "impossibility",
+      "unreality",
+      "fiction",
+      "illusion"
+    ]
+  },
+  {
+    "id": "word_035",
+    "english": "variable",
+    "chinese": "n. 变量；adj. 可变的",
+    "phonetics": "/ˈveəriəbl/",
+    "difficulty": "medium",
+    "word_type": "noun_adjective",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Temperature and pressure are important variables in chemical reactions.",
+      "The weather is highly variable in mountainous regions.",
+      "Researchers controlled for multiple variables in the experiment."
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "variable factor",
+      "highly variable"
+    ],
+    "synonyms": [
+      "factor",
+      "element",
+      "parameter",
+      "changeable",
+      "fluctuating"
+    ],
+    "antonyms": [
+      "constant",
+      "fixed",
+      "stable",
+      "unchanging",
+      "uniform"
+    ]
+  },
+  {
+    "id": "word_036",
+    "english": "parameter",
+    "chinese": "n. 参数，规范",
+    "phonetics": "/pəˈræmɪtər/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The study defined specific parameters for data collection.",
+      "Computer programs require input parameters to function correctly.",
+      "Quality parameters ensure consistent manufacturing standards."
+    ],
+    "collocations": [
+      "input parameters",
+      "quality parameters",
+      "set parameters",
+      "parameter values"
+    ],
+    "synonyms": [
+      "variable",
+      "factor",
+      "criterion",
+      "limit",
+      "boundary"
+    ],
+    "antonyms": [
+      "unlimited",
+      "boundless",
+      "infinite",
+      "unrestricted"
+    ]
+  },
+  {
+    "id": "word_037",
+    "english": "optimization",
+    "chinese": "n. 优化",
+    "phonetics": "/ˌɒptɪmaɪˈzeɪʃn/",
+    "difficulty": "hard",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Search engine optimization improves website visibility online.",
+      "Process optimization reduces production costs and waste.",
+      "Machine learning algorithms use optimization techniques for better performance."
+    ],
+    "collocations": [
+      "search engine optimization",
+      "process optimization",
+      "performance optimization",
+      "optimization techniques"
+    ],
+    "synonyms": [
+      "improvement",
+      "enhancement",
+      "refinement",
+      "efficiency",
+      "maximization"
+    ],
+    "antonyms": [
+      "degradation",
+      "deterioration",
+      "worsening",
+      "inefficiency"
+    ]
+  },
+  {
+    "id": "word_038",
+    "english": "architecture",
+    "chinese": "n. 架构，建筑学",
+    "phonetics": "/ˈɑːkɪtektʃər/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "Cloud architecture enables scalable and flexible computing solutions.",
+      "Modern architecture incorporates sustainable design principles.",
+      "Software architecture determines system performance and maintainability."
+    ],
+    "collocations": [
+      "software architecture",
+      "modern architecture",
+      "system architecture",
+      "cloud architecture"
+    ],
+    "synonyms": [
+      "design",
+      "structure",
+      "framework",
+      "layout",
+      "construction"
+    ],
+    "antonyms": [
+      "destruction",
+      "demolition",
+      "ruin",
+      "collapse"
+    ]
+  },
+  {
+    "id": "word_039",
+    "english": "integration",
+    "chinese": "n. 集成，整合",
+    "phonetics": "/ˌɪntɪˈɡreɪʃn/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "System integration improves workflow efficiency across departments.",
+      "Cultural integration helps international students adapt to new environments.",
+      "Technology integration transforms traditional business operations."
+    ],
+    "collocations": [
+      "system integration",
+      "cultural integration",
+      "economic integration",
+      "vertical integration"
+    ],
+    "synonyms": [
+      "combination",
+      "unification",
+      "amalgamation",
+      "merger",
+      "consolidation"
+    ],
+    "antonyms": [
+      "separation",
+      "division",
+      "isolation",
+      "segregation"
+    ]
+  },
+  {
+    "id": "word_040",
+    "english": "entrepreneur",
+    "chinese": "n. 企业家",
+    "phonetics": "/ˌɒntrəprəˈnɜːr/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The entrepreneur started three successful companies before age 30.",
+      "Entrepreneurship requires risk-taking and innovative thinking.",
+      "Social entrepreneurs address community needs through business solutions."
+    ],
+    "collocations": [
+      "successful entrepreneur",
+      "young entrepreneur",
+      "social entrepreneur",
+      "entrepreneurial spirit"
+    ],
+    "synonyms": [
+      "businessperson",
+      "founder",
+      "innovator",
+      "pioneer",
+      "creator"
+    ],
+    "antonyms": [
+      "employee",
+      "worker",
+      "follower",
+      "conformist"
+    ]
+  }
+]

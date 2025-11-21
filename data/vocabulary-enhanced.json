@@ -1,0 +1,336 @@
+[
+  {
+    "id": "word_001",
+    "english": "stealth",
+    "chinese": "adj. 隐蔽的，潜行的",
+    "phonetics": "/stelθ/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "medium",
+    "example_sentences": [
+      "The spy moved with stealth to avoid detection.",
+      "Modern aircraft use stealth technology to avoid radar detection.",
+      "In business, sometimes a stealth approach to market entry works best."
+    ],
+    "collocations": [
+      "stealth mode",
+      "stealth technology",
+      "stealth approach",
+      "stealth operation"
+    ],
+    "synonyms": [
+      "covert",
+      "secret",
+      "clandestine",
+      "hidden",
+      "surreptitious"
+    ],
+    "antonyms": [
+      "overt",
+      "obvious",
+      "public",
+      "open",
+      "transparent"
+    ]
+  },
+  {
+    "id": "word_002",
+    "english": "vocabulary",
+    "chinese": "n. 词汇，词汇量",
+    "phonetics": "/vəˈkæbjʊˌleri/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Reading books is the best way to expand your vocabulary.",
+      "The IELTS test requires a good academic vocabulary.",
+      "She has an impressive vocabulary in three languages."
+    ],
+    "collocations": [
+      "expand vocabulary",
+      "academic vocabulary",
+      "rich vocabulary",
+      "vocabulary size"
+    ],
+    "synonyms": [
+      "lexicon",
+      "word power",
+      "word stock",
+      "terminology"
+    ],
+    "antonyms": [
+      "ignorance",
+      "illiteracy"
+    ]
+  },
+  {
+    "id": "word_003",
+    "english": "utilize",
+    "chinese": "v. 利用，使用",
+    "phonetics": "/ˈjuːtəˌlaɪz/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Companies should utilize renewable energy sources.",
+      "Students need to utilize all available resources for research.",
+      "We plan to utilize the new software to improve efficiency."
+    ],
+    "collocations": [
+      "utilize resources",
+      "fully utilize",
+      "effectively utilize",
+      "utilize technology"
+    ],
+    "synonyms": [
+      "use",
+      "employ",
+      "make use of",
+      "harness",
+      "leverage"
+    ],
+    "antonyms": [
+      "waste",
+      "ignore",
+      "neglect",
+      "discard"
+    ]
+  },
+  {
+    "id": "word_004",
+    "english": "analyze",
+    "chinese": "v. 分析，解析",
+    "phonetics": "/ˈænəˌlaɪz/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Researchers need to analyze the data carefully.",
+      "Students must learn to analyze complex texts.",
+      "The report analyzes the economic impact of the policy."
+    ],
+    "collocations": [
+      "analyze data",
+      "critically analyze",
+      "analyze the situation",
+      "analyze the results"
+    ],
+    "synonyms": [
+      "examine",
+      "evaluate",
+      "assess",
+      "investigate",
+      "scrutinize"
+    ],
+    "antonyms": [
+      "synthesize",
+      "combine",
+      "ignore",
+      "overlook"
+    ]
+  },
+  {
+    "id": "word_005",
+    "english": "significant",
+    "chinese": "adj. 重要的，显著的",
+    "phonetics": "/sɪɡˈnɪfɪkənt/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The research shows significant improvements in student performance.",
+      "There has been a significant increase in online learning.",
+      "Climate change poses a significant threat to biodiversity."
+    ],
+    "collocations": [
+      "significant impact",
+      "significant difference",
+      "significant improvement",
+      "statistically significant"
+    ],
+    "synonyms": [
+      "important",
+      "notable",
+      "considerable",
+      "substantial",
+      "meaningful"
+    ],
+    "antonyms": [
+      "insignificant",
+      "minor",
+      "trivial",
+      "negligible"
+    ]
+  },
+  {
+    "id": "word_006",
+    "english": "comprehensive",
+    "chinese": "adj. 全面的，综合的",
+    "phonetics": "/ˌkɒmprɪˈhensɪv/",
+    "difficulty": "medium",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The report provides a comprehensive analysis of the problem.",
+      "Students need a comprehensive understanding of the topic.",
+      "We conducted a comprehensive review of the literature."
+    ],
+    "collocations": [
+      "comprehensive study",
+      "comprehensive analysis",
+      "comprehensive review",
+      "comprehensive coverage"
+    ],
+    "synonyms": [
+      "thorough",
+      "complete",
+      "exhaustive",
+      "all-inclusive",
+      "full"
+    ],
+    "antonyms": [
+      "partial",
+      "incomplete",
+      "limited",
+      "selective"
+    ]
+  },
+  {
+    "id": "word_007",
+    "english": "implement",
+    "chinese": "v. 实施，执行",
+    "phonetics": "/ˈɪmplɪˌment/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The company plans to implement new safety measures.",
+      "It's important to implement effective study strategies.",
+      "The government will implement the new policy next month."
+    ],
+    "collocations": [
+      "implement a plan",
+      "implement changes",
+      "implement a strategy",
+      "successfully implement"
+    ],
+    "synonyms": [
+      "execute",
+      "carry out",
+      "put into practice",
+      "enact",
+      "apply"
+    ],
+    "antonyms": [
+      "neglect",
+      "ignore",
+      "postpone",
+      "abandon"
+    ]
+  },
+  {
+    "id": "word_008",
+    "english": "environment",
+    "chinese": "n. 环境，周围环境",
+    "phonetics": "/ɪnˈvaɪrənmənt/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Protecting the environment is everyone's responsibility.",
+      "The study environment affects learning outcomes.",
+      "Companies must consider their impact on the environment."
+    ],
+    "collocations": [
+      "protect the environment",
+      "clean environment",
+      "working environment",
+      "natural environment"
+    ],
+    "synonyms": [
+      "surroundings",
+      "setting",
+      "conditions",
+      "atmosphere",
+      "ecosystem"
+    ],
+    "antonyms": [
+      "artificial setting",
+      "synthetic conditions"
+    ]
+  },
+  {
+    "id": "word_009",
+    "english": "research",
+    "chinese": "n. 研究；v. 研究",
+    "phonetics": "/ˈriːsɜːrtʃ/",
+    "difficulty": "easy",
+    "word_type": "noun_verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Scientific research requires patience and dedication.",
+      "Students need to research their topics thoroughly.",
+      "The research reveals interesting patterns in behavior."
+    ],
+    "collocations": [
+      "conduct research",
+      "research findings",
+      "research paper",
+      "field research"
+    ],
+    "synonyms": [
+      "investigation",
+      "study",
+      "analysis",
+      "inquiry",
+      "examination"
+    ],
+    "antonyms": [
+      "ignorance",
+      "assumption",
+      "speculation"
+    ]
+  },
+  {
+    "id": "word_010",
+    "english": "perspective",
+    "chinese": "n. 视角，观点",
+    "phonetics": "/pərˈspektɪv/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Try to see the issue from different perspectives.",
+      "The book offers a new perspective on urban development.",
+      "Cultural perspectives influence how people view success."
+    ],
+    "collocations": [
+      "gain perspective",
+      "different perspective",
+      "new perspective",
+      "from my perspective"
+    ],
+    "synonyms": [
+      "viewpoint",
+      "outlook",
+      "angle",
+      "standpoint",
+      "approach"
+    ],
+    "antonyms": [
+      "bias",
+      "prejudice",
+      "narrow-mindedness"
+    ]
+  }
+]

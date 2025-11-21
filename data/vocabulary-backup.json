@@ -1,0 +1,212 @@
+[
+  {
+    "id": "word_001",
+    "chinese": "adj. 隐蔽的，潜行的",
+    "english": "stealth",
+    "phonetics": "/stelθ/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_002",
+    "chinese": "n. 词汇，词汇量",
+    "english": "vocabulary",
+    "phonetics": "/vəˈkæbjʊˌleri/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_003",
+    "chinese": "v. 利用，使用",
+    "english": "utilize",
+    "phonetics": "/ˈjuːtəˌlaɪz/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_004",
+    "chinese": "n. 碎片，片段",
+    "english": "fragment",
+    "phonetics": "/ˈfræɡmənt/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_005",
+    "chinese": "adj. 高效的，有效的",
+    "english": "efficient",
+    "phonetics": "/ɪˈfɪʃənt/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_006",
+    "chinese": "v. 复习，回顾",
+    "english": "review",
+    "phonetics": "/rɪˈvjuː/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_007",
+    "chinese": "n. 工作流程",
+    "english": "workflow",
+    "phonetics": "/ˈwɜːrkˌfloʊ/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_008",
+    "chinese": "v. 集成，整合",
+    "english": "integrate",
+    "phonetics": "/ˈɪntɪˌɡreɪt/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_009",
+    "chinese": "adj. 无缝的，无缝衔接的",
+    "english": "seamless",
+    "phonetics": "/ˈsiːmləs/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_010",
+    "chinese": "n. 微小休息，碎片时间",
+    "english": "micro-break",
+    "phonetics": "/ˈmaɪkroʊˌbreɪk/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_011",
+    "chinese": "adj. 隐蔽的，秘密的",
+    "english": "covert",
+    "phonetics": "/ˈkoʊvɜːrt/",
+    "difficulty": "hard"
+  },
+  {
+    "id": "word_012",
+    "chinese": "n. 学习，研究",
+    "english": "study",
+    "phonetics": "/ˈstʌdi/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_013",
+    "chinese": "v. 验证，确认",
+    "english": "validate",
+    "phonetics": "/ˈvælɪˌdeɪt/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_014",
+    "chinese": "n. 行为，举止",
+    "english": "behavior",
+    "phonetics": "/bɪˈheɪvjər/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_015",
+    "chinese": "adv. 主动地，积极地",
+    "english": "actively",
+    "phonetics": "/ˈæktɪvli/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_016",
+    "chinese": "v. 利用，使用",
+    "english": "utilize",
+    "phonetics": "/ˈjuːtəˌlaɪz/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_017",
+    "chinese": "adj. 关键的，核心的",
+    "english": "critical",
+    "phonetics": "/ˈkrɪtɪkəl/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_018",
+    "chinese": "n. 性能，表现",
+    "english": "performance",
+    "phonetics": "/pərˈfɔːrməns/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_019",
+    "chinese": "adj. 即时的，迅速的",
+    "english": "instant",
+    "phonetics": "/ˈɪnstənt/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_020",
+    "chinese": "n. 响应，反应",
+    "english": "response",
+    "phonetics": "/rɪˈspɒns/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_021",
+    "chinese": "n. 持久性，持久力",
+    "english": "persistence",
+    "phonetics": "/pərˈsɪstəns/",
+    "difficulty": "hard"
+  },
+  {
+    "id": "word_022",
+    "chinese": "adj. 可靠的，可信赖的",
+    "english": "reliable",
+    "phonetics": "/rɪˈlaɪəbl/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_023",
+    "chinese": "v. 恢复，还原",
+    "english": "restore",
+    "phonetics": "/rɪˈstɔːr/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_024",
+    "chinese": "n. 背景，上下文",
+    "english": "context",
+    "phonetics": "/ˈkɒntekst/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_025",
+    "chinese": "v. 同步，使同步",
+    "english": "synchronize",
+    "phonetics": "/ˈsɪŋkrəˌnaɪz/",
+    "difficulty": "hard"
+  },
+  {
+    "id": "word_026",
+    "chinese": "adj. 简单的，极简的",
+    "english": "minimal",
+    "phonetics": "/ˈmɪnɪməl/",
+    "difficulty": "easy"
+  },
+  {
+    "id": "word_027",
+    "chinese": "n. 界面，接口",
+    "english": "interface",
+    "phonetics": "/ˈɪntərˌfeɪs/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_028",
+    "chinese": "n. 组件，部件",
+    "english": "component",
+    "phonetics": "/kəmˈpoʊnənt/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_029",
+    "chinese": "v. 优化，完善",
+    "english": "optimize",
+    "phonetics": "/ˈɒptɪˌmaɪz/",
+    "difficulty": "medium"
+  },
+  {
+    "id": "word_030",
+    "chinese": "adj. 交互的，互动的",
+    "english": "interactive",
+    "phonetics": "/ˌɪntərˈæktɪv/",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "id": "word_021",
+    "english": "significant",
+    "chinese": "adj. 重要的，显著的",
+    "phonetics": "/sɪɡˈnɪfɪkənt/",
+    "difficulty": "easy",
+    "word_type": "adjective",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Climate change has significant effects on the environment.",
+      "The research revealed significant differences between the two groups.",
+      "There has been a significant increase in online education."
+    ],
+    "collocations": [
+      "significant impact",
+      "significant difference",
+      "significant increase",
+      "significant role"
+    ],
+    "synonyms": [
+      "important",
+      "major",
+      "considerable",
+      "substantial",
+      "notable"
+    ],
+    "antonyms": [
+      "insignificant",
+      "minor",
+      "trivial",
+      "negligible"
+    ]
+  },
+  {
+    "id": "word_022",
+    "english": "analyze",
+    "chinese": "v. 分析",
+    "phonetics": "/ˈænəlaɪz/",
+    "difficulty": "medium",
+    "word_type": "verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Researchers analyze data to identify patterns and trends.",
+      "Students must learn to analyze complex texts effectively.",
+      "The report analyzes the economic impact of globalization."
+    ],
+    "collocations": [
+      "analyze data",
+      "analyze situation",
+      "critically analyze",
+      "analyze results"
+    ],
+    "synonyms": [
+      "examine",
+      "investigate",
+      "evaluate",
+      "assess",
+      "study"
+    ],
+    "antonyms": [
+      "synthesize",
+      "combine",
+      "ignore",
+      "neglect"
+    ]
+  },
+  {
+    "id": "word_023",
+    "english": "environment",
+    "chinese": "n. 环境",
+    "phonetics": "/ɪnˈvaɪrənmənt/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "general",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Protecting the environment is everyone's responsibility.",
+      "The school environment affects student learning outcomes.",
+      "Urban environments face unique pollution challenges."
+    ],
+    "collocations": [
+      "natural environment",
+      "work environment",
+      "protect environment",
+      "clean environment"
+    ],
+    "synonyms": [
+      "surroundings",
+      "atmosphere",
+      "setting",
+      "conditions",
+      "habitat"
+    ],
+    "antonyms": [
+      "unnatural setting",
+      "artificial environment",
+      "enclosed space"
+    ]
+  },
+  {
+    "id": "word_024",
+    "english": "policy",
+    "chinese": "n. 政策，方针",
+    "phonetics": "/ˈpɒləsi/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The government implemented new environmental policies.",
+      "Company policies affect workplace culture and productivity.",
+      "Educational policies determine curriculum standards."
+    ],
+    "collocations": [
+      "government policy",
+      "company policy",
+      "foreign policy",
+      "implement policy"
+    ],
+    "synonyms": [
+      "strategy",
+      "guideline",
+      "principle",
+      "procedure",
+      "approach"
+    ],
+    "antonyms": [
+      "chaos",
+      "disorganization",
+      "anarchy",
+      "freedom"
+    ]
+  },
+  {
+    "id": "word_025",
+    "english": "research",
+    "chinese": "n. 研究；v. 研究",
+    "phonetics": "/rɪˈsɜːrtʃ/",
+    "difficulty": "easy",
+    "word_type": "noun_verb",
+    "category": "academic",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Scientific research requires careful methodology and analysis.",
+      "Students conduct research for their final dissertations.",
+      "Market research helps companies understand consumer needs."
+    ],
+    "collocations": [
+      "conduct research",
+      "research findings",
+      "scientific research",
+      "research paper"
+    ],
+    "synonyms": [
+      "study",
+      "investigation",
+      "analysis",
+      "inquiry",
+      "examination"
+    ],
+    "antonyms": [
+      "ignorance",
+      "neglect",
+      "assumption",
+      "speculation"
+    ]
+  },
+  {
+    "id": "word_026",
+    "english": "technology",
+    "chinese": "n. 技术",
+    "phonetics": "/tekˈnɒlədʒi/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "technology",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Modern technology has transformed communication methods.",
+      "Educational technology enhances learning experiences.",
+      "Technology companies drive innovation and economic growth."
+    ],
+    "collocations": [
+      "modern technology",
+      "advanced technology",
+      "digital technology",
+      "technology development"
+    ],
+    "synonyms": [
+      "innovation",
+      "advancement",
+      "machinery",
+      "equipment",
+      "tools"
+    ],
+    "antonyms": [
+      "tradition",
+      "manual methods",
+      "old-fashioned approach",
+      "primitive tools"
+    ]
+  },
+  {
+    "id": "word_027",
+    "english": "development",
+    "chinese": "n. 发展，开发",
+    "phonetics": "/dɪˈveləpmənt/",
+    "difficulty": "easy",
+    "word_type": "noun",
+    "category": "general",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Economic development improves living standards.",
+      "Personal development requires continuous learning and reflection.",
+      "Sustainable development balances growth with environmental protection."
+    ],
+    "collocations": [
+      "economic development",
+      "sustainable development",
+      "personal development",
+      "urban development"
+    ],
+    "synonyms": [
+      "progress",
+      "growth",
+      "advancement",
+      "improvement",
+      "evolution"
+    ],
+    "antonyms": [
+      "decline",
+      "regression",
+      "stagnation",
+      "deterioration"
+    ]
+  },
+  {
+    "id": "word_028",
+    "english": "process",
+    "chinese": "n. 过程；v. 处理",
+    "phonetics": "/ˈprɒses/",
+    "difficulty": "easy",
+    "word_type": "noun_verb",
+    "category": "general",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The application process takes approximately two weeks.",
+      "Companies process customer orders efficiently.",
+      "Learning is a continuous process throughout life."
+    ],
+    "collocations": [
+      "decision-making process",
+      "process information",
+      "manufacturing process",
+      "learning process"
+    ],
+    "synonyms": [
+      "procedure",
+      "method",
+      "system",
+      "operation",
+      "technique"
+    ],
+    "antonyms": [
+      "result",
+      "outcome",
+      "product",
+      "conclusion"
+    ]
+  },
+  {
+    "id": "word_029",
+    "english": "economy",
+    "chinese": "n. 经济",
+    "phonetics": "/ɪˈkɒnəmi/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "The global economy faces significant challenges.",
+      "Digital economy creates new job opportunities.",
+      "Government policies influence national economy performance."
+    ],
+    "collocations": [
+      "global economy",
+      "market economy",
+      "digital economy",
+      "economic growth"
+    ],
+    "synonyms": [
+      "financial system",
+      "market",
+      "trade",
+      "commerce",
+      "business"
+    ],
+    "antonyms": [
+      "barter system",
+      "self-sufficiency",
+      "isolation",
+      "autarky"
+    ]
+  },
+  {
+    "id": "word_030",
+    "english": "management",
+    "chinese": "n. 管理",
+    "phonetics": "/ˈmænɪdʒmənt/",
+    "difficulty": "medium",
+    "word_type": "noun",
+    "category": "business",
+    "ielts_frequency": "high",
+    "example_sentences": [
+      "Effective management leads to organizational success.",
+      "Time management skills are essential for students.",
+      "Project management ensures deadlines are met efficiently."
+    ],
+    "collocations": [
+      "effective management",
+      "time management",
+      "crisis management",
+      "senior management"
+    ],
+    "synonyms": [
+      "administration",
+      "leadership",
+      "control",
+      "supervision",
+      "direction"
+    ],
+    "antonyms": [
+      "mismanagement",
+      "neglect",
+      "chaos",
+      "disorganization"
+    ]
+  }
+]

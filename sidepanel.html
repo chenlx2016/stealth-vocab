@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stealth Vocab</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="stealth-container">
+        <!-- Progress indicator -->
+        <div class="progress-section">
+            <div class="progress-header">
+                <span id="progress-text">今日已复习 0 个词</span>
+                <button class="settings-btn" id="settings-btn" title="切换学习模式">
+                    <span class="settings-icon">⚙️</span>
+                </button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="cumulative-stats">
+                <div class="stat-item">
+                    <span class="stat-label">总词汇</span>
+                    <span class="stat-value" id="total-words">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">累计掌握</span>
+                    <span class="stat-value" id="cumulative-mastered">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">累计复习</span>
+                    <span class="stat-value" id="cumulative-reviews">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary card -->
+        <div class="vocabulary-card" id="vocabulary-card">
+            <div class="card-front" id="card-front">
+                <div class="card-content">
+                    <div class="chinese-section">
+                        <div id="chinese-definition">加载中...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back" id="card-back" style="display: none;">
+                <div class="card-content">
+                    <!-- Core information -->
+                    <div class="english-section">
+                        <h3 id="english-word" class="clickable-word">加载中...</h3>
+                        <p id="phonetics">/lō-dəŋ/</p>
+                        <div class="word-info">
+                            <span class="word-type" id="word-type">adj.</span>
+                            <span class="word-category" id="word-category">academic</span>
+                        </div>
+                    </div>
+
+                    <!-- Expandable detailed information -->
+                    <div class="detailed-info" id="detailed-info" style="display: none;">
+                        <!-- Core example sentence with fill-in-the-blank -->
+                        <div class="core-example-section">
+                            <div class="section-title">
+                                <span>🌟 核心例句</span>
+                                <span class="difficulty-hint">填空学习</span>
+                            </div>
+                            <div id="core-example" class="core-example">
+                                <!-- Fill-in-the-blank example will be inserted here -->
+                            </div>
+                        </div>
+
+                        <!-- Additional examples -->
+                        <div class="example-section">
+                            <div class="section-title">📝 更多例句</div>
+                            <div id="example-sentences" class="example-sentences">
+                                <!-- Additional example sentences will be inserted here -->
+                            </div>
+                        </div>
+
+                        <!-- Synonyms and Antonyms -->
+                        <div class="synonyms-section">
+                            <div class="synonyms-row">
+                                <div class="synonyms-group">
+                                    <div class="section-title">🔗 同义词</div>
+                                    <div id="synonyms" class="synonyms-list">
+                                        <!-- Synonyms will be inserted here -->
+                                    </div>
+                                </div>
+                                <div class="antonyms-group">
+                                    <div class="section-title">🚫 反义词</div>
+                                    <div id="antonyms" class="antonyms-list">
+                                        <!-- Antonyms will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="action-buttons">
+                        <button class="more-info-btn" id="more-info-btn">
+                            <span class="btn-icon">📋</span>
+                            <span class="btn-text">详细用法</span>
+                        </button>
+                        <button class="next-word-btn" id="next-word-btn">
+                            <span class="btn-icon">⏭️</span>
+                            <span class="btn-text">下一个</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback buttons -->
+        <div class="feedback-section">
+            <div class="feedback-label">
+                <span>这个词我掌握得</span>
+            </div>
+            <div class="feedback-buttons">
+                <button class="feedback-btn mastered" id="btn-mastered" data-status="mastered">
+                    <span class="btn-emoji">🔥</span>
+                    <span class="btn-title">掌握</span>
+                    <span class="btn-desc">熟练掌握</span>
+                    <span class="btn-detail">快速通过</span>
+                </button>
+                <button class="feedback-btn vague" id="btn-vague" data-status="vague">
+                    <span class="btn-emoji">🤔</span>
+                    <span class="btn-title">模糊</span>
+                    <span class="btn-desc">印象模糊</span>
+                    <span class="btn-detail">需要多练</span>
+                </button>
+                <button class="feedback-btn forgotten" id="btn-forgotten" data-status="forgotten">
+                    <span class="btn-emoji">❄</span>
+                    <span class="btn-title">遗忘</span>
+                    <span class="btn-desc">完全忘记</span>
+                    <span class="btn-detail">重新学习</span>
+                </button>
+            </div>
+            <div class="feedback-hint">
+                <span>💡 诚实选择有助于高效复习</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="sidepanel.js"></script>
+    <script>
+        // Error handling - if the main script fails to load
+        setTimeout(() => {
+            if (typeof SidePanel === 'undefined') {
+                console.error('❌ Main script failed to load');
+                document.body.innerHTML = `
+                    <div style="padding: 20px; color: #e0e0e0; text-align: center;">
+                        <h2>❌ 加载失败</h2>
+                        <p>JavaScript文件加载失败，请检查：</p>
+                        <ul style="text-align: left; display: inline-block;">
+                            <li>文件是否存在：<code>sidepanel.js</code></li>
+                            <li>扩展是否正确重新加载</li>
+                            <li>开发者权限是否正常</li>
+                        </ul>
+                        <button onclick="window.location.reload()" style="
+                            padding: 10px 20px;
+                            background: #4a7c59;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        ">重新加载</button>
+                    </div>
+                `;
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
