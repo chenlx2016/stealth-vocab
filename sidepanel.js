@@ -117,6 +117,7 @@ async function loadVocabularyData() {
         ];
 
         let dataLoaded = false;
+        let loadedDataSize = 0;
 
         for (const path of externalPaths) {
             try {
@@ -124,11 +125,21 @@ async function loadVocabularyData() {
                 const response = await fetch(path);
                 if (response.ok) {
                     const data = await response.json();
-                    if (data && data.length > 0) {
+                    if (data && Array.isArray(data) && data.length > 10) { // Validate it's a substantial vocabulary
                         vocabularyData = data;
-                        console.log(`✅ Loaded ${vocabularyData.length} vocabulary words from external file`);
+                        loadedDataSize = data.length;
                         dataLoaded = true;
-                        break;
+                        console.log(`✅ Loaded ${vocabularyData.length} vocabulary words from external file: ${path}`);
+
+                        // Validate first few words have proper structure
+                        const firstWord = vocabularyData[0];
+                        if (firstWord && firstWord.english && firstWord.chinese) {
+                            console.log('✅ Vocabulary data structure validated');
+                            break;
+                        } else {
+                            console.log('❌ Vocabulary data structure invalid, trying next source');
+                            dataLoaded = false;
+                        }
                     }
                 }
             } catch (pathError) {
@@ -142,10 +153,11 @@ async function loadVocabularyData() {
             try {
                 console.log('🔄 Trying Chrome storage for vocabulary data...');
                 const stored = await chrome.storage.local.get(['vocabularyData']);
-                if (stored.vocabularyData && stored.vocabularyData.length > 0) {
+                if (stored.vocabularyData && Array.isArray(stored.vocabularyData) && stored.vocabularyData.length > 10) {
                     vocabularyData = stored.vocabularyData;
-                    console.log(`✅ Loaded ${vocabularyData.length} vocabulary words from Chrome storage`);
+                    loadedDataSize = stored.vocabularyData.length;
                     dataLoaded = true;
+                    console.log(`✅ Loaded ${vocabularyData.length} vocabulary words from Chrome storage`);
                 }
             } catch (storageError) {
                 console.log(`❌ Chrome storage failed: ${storageError.message}`);
@@ -156,10 +168,13 @@ async function loadVocabularyData() {
         if (!dataLoaded) {
             console.log('🔄 Using built-in fallback vocabulary data');
             vocabularyData = fallbackVocabulary;
+            loadedDataSize = fallbackVocabulary.length;
         }
 
-        console.log(`📊 Final vocabulary size: ${vocabularyData.length} words`);
-        return true;
+        console.log(`📊 Final vocabulary size: ${vocabularyData.length} words (real data: ${loadedDataSize > 10})`);
+        console.log(`🎯 First word in final vocabulary:`, vocabularyData[0]?.english || 'N/A');
+
+        return dataLoaded || vocabularyData === fallbackVocabulary;
 
     } catch (error) {
         console.error('❌ Critical error loading vocabulary data:', error);
@@ -353,6 +368,13 @@ function initializeStats() {
         cumulativeMasteredCount = stats.cumulativeMasteredCount || 0;
     }
 
+    // Randomize starting word for variety (but only if it's a fresh start)
+    const isNewSession = !savedStats || new Date().toDateString() !== new Date(savedStats.lastUpdateDate).toDateString();
+    if (isNewSession) {
+        currentWordIndex = Math.floor(Math.random() * 10); // Start with random word from first 10
+        console.log('🎲 New session detected, randomized starting word index:', currentWordIndex);
+    }
+
     // Update UI with loaded stats
     updateStatsDisplay();
 }
@@ -514,14 +536,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update display with full vocabulary data
             updateStatsDisplay();
 
-            // Update current word display if user is on Chinese side
-            const cardFront = document.getElementById('card-front');
-            const cardBack = document.getElementById('card-back');
-            const isCurrentlyShowingChinese = cardFront && cardFront.style.display !== 'none';
-
-            if (isCurrentlyShowingChinese) {
+            // Re-display the current word with the loaded vocabulary data
+            // This ensures the user sees real vocabulary words instead of sample data
+            const wasFlipped = isFlipped;
+            if (wasFlipped) {
                 displayChineseSide();
                 console.log('🔄 Updated Chinese side with loaded vocabulary');
+            } else {
+                displayEnglishSide(true); // Preserve detailed info state
+                console.log('🔄 Updated English side with loaded vocabulary');
             }
 
             console.log('✅ Complete vocabulary loaded and display updated');
