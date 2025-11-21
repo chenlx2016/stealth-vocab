@@ -13,8 +13,11 @@ try {
     console.error('❌ Error testing APIs:', error);
 }
 
-// Simple test vocabulary
-const testVocabulary = [
+// Load vocabulary from data file
+let vocabularyData = [];
+
+// Fallback test vocabulary
+const fallbackVocabulary = [
     {
         id: 'test_1',
         english: 'test',
@@ -22,46 +25,14 @@ const testVocabulary = [
         phonetics: '/test/',
         wordType: 'verb/noun',
         category: 'academic',
-        coreExample: 'Before launching the new product, we need to _____ it thoroughly.',
+        coreExample: 'Before launching the new product, we need to test it thoroughly.',
         additionalExamples: [
-            'The doctor ordered a series of medical _____s.',
-            'This is just a _____ of the new system.',
-            'The experiment will _____ the effectiveness of the drug.'
+            'The doctor ordered a series of medical tests.',
+            'This is just a test of the new system.',
+            'The experiment will test the effectiveness of the drug.'
         ],
         synonyms: ['examination', 'trial', 'assessment'],
         antonyms: ['ignore', 'neglect']
-    },
-    {
-        id: 'significant_2',
-        english: 'significant',
-        chinese: '重要的；显著的；意义重大的',
-        phonetics: '/sɪɡˈnɪfɪkənt/',
-        wordType: 'adjective',
-        category: 'academic',
-        coreExample: 'The research shows a _____ improvement in patient recovery.',
-        additionalExamples: [
-            'There has been a _____ increase in sales.',
-            'This is a _____ moment in our company\'s history.',
-            'The discovery has _____ implications for cancer treatment.'
-        ],
-        synonyms: ['important', 'notable', 'meaningful'],
-        antonyms: ['insignificant', 'trivial', 'minor']
-    },
-    {
-        id: 'efficient_3',
-        english: 'efficient',
-        chinese: '效率高的；有能力的',
-        phonetics: '/ɪˈfɪʃənt/',
-        wordType: 'adjective',
-        category: 'business',
-        coreExample: 'We need to find a more _____ way to organize our workflow.',
-        additionalExamples: [
-            'The new system is much more _____ than the old one.',
-            'She is very _____ at managing her time.',
-            '_____ energy use can save money and help the environment.'
-        ],
-        synonyms: ['productive', 'effective', 'organized'],
-        antonyms: ['inefficient', 'wasteful', 'slow']
     }
 ];
 
@@ -69,9 +40,33 @@ const testVocabulary = [
 let currentWordIndex = 0;
 let isFlipped = false;
 
-// Simple functions
+// Load vocabulary data from JSON file
+async function loadVocabularyData() {
+    try {
+        const response = await fetch('./data/vocabulary-complete.json');
+        if (response.ok) {
+            vocabularyData = await response.json();
+            console.log(`✅ Loaded ${vocabularyData.length} vocabulary words`);
+            return true;
+        } else {
+            throw new Error('Failed to fetch vocabulary data');
+        }
+    } catch (error) {
+        console.error('❌ Error loading vocabulary data:', error);
+        vocabularyData = fallbackVocabulary;
+        console.log('🔄 Using fallback vocabulary data');
+        return false;
+    }
+}
+
+// Get current vocabulary data
+function getCurrentVocabulary() {
+    return vocabularyData.length > 0 ? vocabularyData : fallbackVocabulary;
+}
+
 function getCurrentWord() {
-    return testVocabulary[currentWordIndex % testVocabulary.length];
+    const vocab = getCurrentVocabulary();
+    return vocab[currentWordIndex % vocab.length];
 }
 
 function moveToNextWord() {
@@ -87,14 +82,18 @@ function displayEnglishSide(hideDetailedInfo = true) {
     const cardFront = document.getElementById('card-front');
     const cardBack = document.getElementById('card-back');
 
+    // Handle both old and new data formats
+    const wordTypeText = word.wordType || word.word_type || '';
+    const wordCategoryText = word.category || '';
+
     // Update English content
     if (englishWord) {
         englishWord.textContent = word.english;
         englishWord.onclick = toggleDetailedInfo;
     }
-    if (phonetics) phonetics.textContent = word.phonetics;
-    if (wordType) wordType.textContent = word.wordType;
-    if (wordCategory) wordCategory.textContent = word.category;
+    if (phonetics) phonetics.textContent = word.phonetics || '';
+    if (wordType) wordType.textContent = wordTypeText.replace(/_/g, '/');
+    if (wordCategory) wordCategory.textContent = wordCategoryText;
 
     // Hide detailed info by default when showing new word (but not when flipping)
     const detailedInfo = document.getElementById('detailed-info');
@@ -129,34 +128,40 @@ function loadDetailedInfo() {
     const word = getCurrentWord();
     if (!word) return;
 
+    // Handle both old and new data formats
+    const coreExample = word.coreExample || (word.example_sentences && word.example_sentences[0]) || 'No example available';
+    const additionalExamples = word.additionalExamples || (word.example_sentences && word.example_sentences.slice(1)) || [];
+    const synonyms = word.synonyms || [];
+    const antonyms = word.antonyms || [];
+
     // Update core example - simplified without buttons
-    const coreExample = document.getElementById('core-example');
-    if (coreExample) {
-        coreExample.innerHTML = `
-            <div class="sentence-example">${word.coreExample}</div>
+    const coreExampleEl = document.getElementById('core-example');
+    if (coreExampleEl) {
+        coreExampleEl.innerHTML = `
+            <div class="sentence-example">${coreExample}</div>
         `;
     }
 
     // Update additional examples - simplified
     const exampleSentences = document.getElementById('example-sentences');
     if (exampleSentences) {
-        exampleSentences.innerHTML = word.additionalExamples
+        exampleSentences.innerHTML = additionalExamples
             .map(example => `<div class="example-item">${example}</div>`)
             .join('');
     }
 
     // Update synonyms and antonyms - simplified
-    const synonyms = document.getElementById('synonyms');
-    const antonyms = document.getElementById('antonyms');
+    const synonymsEl = document.getElementById('synonyms');
+    const antonymsEl = document.getElementById('antonyms');
 
-    if (synonyms) {
-        synonyms.innerHTML = word.synonyms
+    if (synonymsEl) {
+        synonymsEl.innerHTML = synonyms
             .map(synonym => `<span class="synonym-item">${synonym}</span>`)
             .join('');
     }
 
-    if (antonyms) {
-        antonyms.innerHTML = word.antonyms
+    if (antonymsEl) {
+        antonymsEl.innerHTML = antonyms
             .map(antonym => `<span class="antonym-item">${antonym}</span>`)
             .join('');
     }
@@ -171,7 +176,7 @@ function displayChineseSide() {
     const cardBack = document.getElementById('card-back');
 
     if (chineseDefinition) {
-        chineseDefinition.textContent = word.chinese;
+        chineseDefinition.textContent = word.chinese || '中文释义加载中...';
         console.log('✅ Displayed Chinese:', word.chinese);
     }
 
@@ -220,7 +225,8 @@ function updateStatsDisplay() {
     const totalWords = document.getElementById('total-words');
     const cumulativeReviews = document.getElementById('cumulative-reviews');
     const cumulativeMastered = document.getElementById('cumulative-mastered');
-    if (totalWords) totalWords.textContent = testVocabulary.length;
+    const vocab = getCurrentVocabulary();
+    if (totalWords) totalWords.textContent = vocab.length;
     if (cumulativeReviews) cumulativeReviews.textContent = todayReviewCount;
     if (cumulativeMastered) cumulativeMastered.textContent = cumulativeMasteredCount;
 }
@@ -346,10 +352,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initialize stats and display first word
-    setTimeout(() => {
+    setTimeout(async () => {
         initializeStats();
+
+        // Load vocabulary data
+        console.log('🔄 Loading vocabulary data...');
+        await loadVocabularyData();
+
+        // Display first word after data is loaded
         displayEnglishSide(true); // 初始单词时隐藏详细信息
-        console.log('✅ Simple initialization complete - showing English by default');
+        updateStatsDisplay(); // Update stats with correct word count
+        console.log('✅ Initialization complete - showing English by default');
     }, 100);
 });
 
