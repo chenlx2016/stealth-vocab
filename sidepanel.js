@@ -235,7 +235,8 @@ function displayEnglishSide(hideDetailedInfo = true) {
     // Update English content
     if (englishWord) {
         englishWord.textContent = word.english;
-        englishWord.onclick = toggleDetailedInfo;
+        // 移除直接onclick处理，让全局事件委托统一处理
+        englishWord.onclick = null;
     }
     if (phonetics) phonetics.textContent = word.phonetics || '';
     if (wordType) wordType.textContent = wordTypeText.replace(/_/g, '/');
@@ -426,24 +427,52 @@ function submitFeedback(status) {
 }
 
 function toggleMoreInfo() {
-    toggleDetailedInfo();
-
-    // Update button text
+    console.log('🔧 More info button clicked');
     const detailedInfo = document.getElementById('detailed-info');
     const moreInfoBtn = document.getElementById('more-info-btn');
 
-    if (detailedInfo && moreInfoBtn) {
-        const isVisible = detailedInfo.style.display !== 'none';
-        const btnText = moreInfoBtn.querySelector('.btn-text');
-        if (btnText) {
-            btnText.textContent = isVisible ? '收起详情' : '详细用法';
-        }
+    if (!detailedInfo || !moreInfoBtn) {
+        console.log('❌ Missing elements for toggleMoreInfo');
+        return;
+    }
+
+    const isVisible = detailedInfo.style.display !== 'none';
+
+    if (isVisible) {
+        detailedInfo.style.display = 'none';
+        console.log('🔽 Detailed info hidden via more info button');
+    } else {
+        detailedInfo.style.display = 'block';
+        console.log('🔼 Detailed info shown via more info button, loading content...');
+        loadDetailedInfo();
+    }
+
+    // Update button text
+    const btnText = moreInfoBtn.querySelector('.btn-text');
+    if (btnText) {
+        btnText.textContent = !isVisible ? '收起详情' : '详细用法';
+        console.log('🔧 Button text updated to:', btnText.textContent);
     }
 }
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 DOM Content Loaded - Starting simple initialization...');
+
+    // Test button accessibility
+    const moreInfoBtn = document.getElementById('more-info-btn');
+    if (moreInfoBtn) {
+        console.log('✅ More info button found:', moreInfoBtn);
+        // Add a direct click listener for testing
+        moreInfoBtn.addEventListener('click', function(e) {
+            console.log('🔧 Direct click listener on more info button triggered!');
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMoreInfo();
+        });
+    } else {
+        console.log('❌ More info button NOT found!');
+    }
 
     // Simple test first - set a clean initial state
     const chineseElement = document.getElementById('chinese-definition');
@@ -455,25 +484,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Set up event listeners - both sides should be clickable
-    const cardFront = document.getElementById('card-front');
-    const cardBack = document.getElementById('card-back');
-
-    if (cardFront) {
-        cardFront.addEventListener('click', (e) => {
-            console.log('🔧 Card front clicked directly');
-            flipCard();
-        });
-        console.log('✅ Card front click listener added');
-    }
-
-    if (cardBack) {
-        cardBack.addEventListener('click', (e) => {
-            console.log('🔧 Card back clicked directly');
-            flipCard();
-        });
-        console.log('✅ Card back click listener added');
-    }
+    // 卡片点击事件现在完全由全局事件委托处理，避免多重监听器冲突
+    // const cardFront = document.getElementById('card-front');
+    // const cardBack = document.getElementById('card-back');
 
     // Feedback buttons
     const masteredBtn = document.getElementById('btn-mastered');
@@ -484,12 +497,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (vagueBtn) vagueBtn.addEventListener('click', () => submitFeedback('vague'));
     if (forgottenBtn) forgottenBtn.addEventListener('click', () => submitFeedback('forgotten'));
 
-    // Action buttons
-    const moreInfoBtn = document.getElementById('more-info-btn');
-    const nextWordBtn = document.getElementById('next-word-btn');
+    // Action buttons - 移除直接监听器，使用全局事件委托处理
+    // const moreInfoBtn = document.getElementById('more-info-btn');
+    // const nextWordBtn = document.getElementById('next-word-btn');
 
-    if (moreInfoBtn) moreInfoBtn.addEventListener('click', toggleMoreInfo);
-    if (nextWordBtn) nextWordBtn.addEventListener('click', () => submitFeedback('next'));
+    // if (moreInfoBtn) moreInfoBtn.addEventListener('click', toggleMoreInfo);
+    // if (nextWordBtn) nextWordBtn.addEventListener('click', () => submitFeedback('next'));
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
@@ -501,18 +514,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Global event delegation for dynamically created buttons and card interactions
     document.addEventListener('click', (e) => {
-        // Handle English word click
-        if (e.target.classList.contains('clickable-word') || e.target.id === 'english-word') {
+        console.log('🔧 Global click detected on:', e.target, e.target.classList.toString());
+
+        // Handle action buttons first - highest priority
+        if (e.target.closest('#more-info-btn')) {
+            e.preventDefault();
+            e.stopPropagation(); // 阻止事件冒泡到卡片
+            console.log('🔧 More info button clicked via global delegation');
+            toggleMoreInfo();
+            return;
+        }
+
+        if (e.target.closest('#next-word-btn')) {
+            e.preventDefault();
+            e.stopPropagation(); // 阻止事件冒泡到卡片
+            console.log('🔧 Next word button clicked via global delegation');
+            submitFeedback('next');
+            return;
+        }
+
+        // Handle English word click (only on card back/English side)
+        if ((e.target.classList.contains('clickable-word') || e.target.id === 'english-word') &&
+            e.target.closest('#card-back')) {
             e.preventDefault();
             e.stopPropagation(); // 阻止事件冒泡到卡片
             toggleDetailedInfo();
-            console.log('🔧 English word clicked, toggling detailed info');
+            console.log('🔧 English word clicked on card back, toggling detailed info');
+            return;
         }
 
-        // Handle action buttons to prevent card flip
-        if (e.target.closest('#more-info-btn') || e.target.closest('#next-word-btn')) {
-            e.stopPropagation(); // 阻止事件冒泡到卡片
-            console.log('🔧 Action button clicked, preventing card flip');
+        // Handle card clicks for flipping (lowest priority)
+        if (e.target.closest('#card-front') || e.target.closest('#card-back')) {
+            console.log('🔧 Card clicked for flip:', e.target.closest('#card-front') ? 'front' : 'back');
+            flipCard();
         }
     });
 
