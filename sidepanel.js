@@ -129,30 +129,23 @@ function loadDetailedInfo() {
     const word = getCurrentWord();
     if (!word) return;
 
-    // Update core example
+    // Update core example - simplified without buttons
     const coreExample = document.getElementById('core-example');
     if (coreExample) {
-        const blankedSentence = word.coreExample.replace(/_____+/, '______');
         coreExample.innerHTML = `
-            <div class="fill-blank-container">
-                <div class="sentence-with-blank">${blankedSentence}</div>
-                <button class="reveal-answer-btn" data-answer="${word.english}">
-                    🔍 显示答案
-                </button>
-                <span class="hidden-answer" style="display: none;">: <strong>${word.english}</strong></span>
-            </div>
+            <div class="sentence-example">${word.coreExample}</div>
         `;
     }
 
-    // Update additional examples
+    // Update additional examples - simplified
     const exampleSentences = document.getElementById('example-sentences');
     if (exampleSentences) {
         exampleSentences.innerHTML = word.additionalExamples
-            .map(example => `<div class="example-item">• ${example}</div>`)
+            .map(example => `<div class="example-item">${example}</div>`)
             .join('');
     }
 
-    // Update synonyms and antonyms
+    // Update synonyms and antonyms - simplified
     const synonyms = document.getElementById('synonyms');
     const antonyms = document.getElementById('antonyms');
 
@@ -343,18 +336,6 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation(); // 阻止事件冒泡到卡片
             toggleDetailedInfo();
             console.log('🔧 English word clicked, toggling detailed info');
-        }
-
-        // Handle reveal answer button
-        if (e.target.classList.contains('reveal-answer-btn')) {
-            e.preventDefault();
-            e.stopPropagation(); // 阻止事件冒泡到卡片
-            const hiddenAnswer = e.target.nextElementSibling;
-            if (hiddenAnswer && hiddenAnswer.classList.contains('hidden-answer')) {
-                hiddenAnswer.style.display = 'inline';
-                e.target.style.display = 'none';
-                console.log('✅ Answer revealed');
-            }
         }
 
         // Handle action buttons to prevent card flip

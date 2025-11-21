@@ -641,60 +641,21 @@ body {
   text-transform: lowercase;
 }
 
-/* Core example sentence section */
-.core-example-section {
-  margin-top: 12px;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-}
-
-.core-example-section .section-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.difficulty-hint {
-  font-size: 9px;
-  color: var(--progress-fill);
-  background: rgba(74, 124, 89, 0.1);
-  padding: 2px 6px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
+/* Core example sentence - simplified */
 .core-example {
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--text-primary);
-  padding: 12px;
-  background: var(--background);
-  border: 1px dashed var(--border);
+  margin-bottom: 12px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 6px;
-  position: relative;
 }
 
-.fill-blank {
-  display: inline-block;
-  min-width: 80px;
-  padding: 2px 6px;
-  background: rgba(74, 124, 89, 0.1);
-  border: 1px solid var(--progress-fill);
-  border-radius: 4px;
+.sentence-example {
+  font-size: 13px;
+  line-height: 1.5;
   color: var(--text-primary);
-  font-weight: 600;
-  text-align: center;
-  transition: all 0.3s ease;
+  font-style: italic;
 }
 
-.fill-blank:hover {
-  background: rgba(74, 124, 89, 0.2);
-  transform: scale(1.02);
-}
 
 /* Detailed information section */
 .detailed-info {
@@ -756,19 +717,6 @@ body {
 }
 
 /* Example sentences section */
-.example-section {
-  margin-top: 16px;
-  padding-top: 12px;
-}
-
-.section-title {
-  font-size: 11px;
-  color: var(--text-dim);
-  margin-bottom: 8px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
 
 .example-sentences {
   font-size: 12px;
@@ -776,41 +724,21 @@ body {
   color: var(--text-secondary);
 }
 
-.example-sentences .example {
-  position: relative;
-  padding-left: 12px;
+.example-sentences .example-item {
   margin-bottom: 6px;
   opacity: 0.8;
 }
 
-.example-sentences .example::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--text-dim);
-  font-size: 10px;
-  top: 2px;
-}
-
-.example-sentences .example:last-child {
+.example-sentences .example-item:last-child {
   margin-bottom: 0;
 }
 
-/* Synonyms and Antonyms section */
-.synonyms-section {
-  margin-top: 16px;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 12px;
-}
-
-.synonyms-row {
+/* Synonyms and Antonyms - simplified */
+.synonyms-antonyms {
+  margin-top: 12px;
   display: flex;
-  gap: 16px;
-}
-
-.synonyms-group,
-.antonyms-group {
-  flex: 1;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .synonyms-list,
@@ -820,8 +748,8 @@ body {
   gap: 4px;
 }
 
-.synonym,
-.antonym {
+.synonym-item,
+.antonym-item {
   font-size: 11px;
   color: var(--text-secondary);
   background-color: var(--surface-hover);
@@ -831,8 +759,8 @@ body {
   opacity: 0.8;
 }
 
-.synonym:hover,
-.antonym:hover {
+.synonym-item:hover,
+.antonym-item:hover {
   background-color: var(--surface);
   opacity: 1;
   color: var(--text-primary);
