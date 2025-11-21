@@ -183,7 +183,21 @@ function getCurrentVocabulary() {
 
 function getCurrentWord() {
     const vocab = getCurrentVocabulary();
-    return vocab[currentWordIndex % vocab.length];
+    const word = vocab[currentWordIndex % vocab.length];
+
+    // Debug logging to understand the data structure
+    if (word) {
+        console.log('📖 Current word debug:', {
+            english: word.english,
+            chinese: word.chinese,
+            hasChinese: !!word.chinese,
+            chineseType: typeof word.chinese,
+            vocabSize: vocab.length,
+            currentIndex: currentWordIndex
+        });
+    }
+
+    return word;
 }
 
 function moveToNextWord() {
@@ -293,8 +307,20 @@ function displayChineseSide() {
     const cardBack = document.getElementById('card-back');
 
     if (chineseDefinition) {
-        chineseDefinition.textContent = word.chinese || '中文释义加载中...';
-        console.log('✅ Displayed Chinese:', word.chinese);
+        // Ensure we're displaying a clean Chinese definition
+        let chineseText = '中文释义加载中...';
+
+        if (word && word.chinese) {
+            chineseText = word.chinese;
+        } else if (word && word.id) {
+            chineseText = `词汇 ${word.id} 的中文释义`;
+        }
+
+        // Clear any existing content and set the Chinese definition
+        chineseDefinition.innerHTML = '';
+        chineseDefinition.textContent = chineseText;
+
+        console.log('✅ Displayed Chinese for word:', word.english, '->', chineseText);
     }
 
     // Show Chinese side, hide English side
@@ -397,10 +423,10 @@ function toggleMoreInfo() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 DOM Content Loaded - Starting simple initialization...');
 
-    // Simple test first
+    // Simple test first - set a clean initial state
     const chineseElement = document.getElementById('chinese-definition');
     if (chineseElement) {
-        chineseElement.textContent = 'JavaScript已加载，正在初始化词汇功能...';
+        chineseElement.textContent = '词汇加载中...';
         console.log('✅ Chinese definition element updated successfully');
     } else {
         console.log('❌ Chinese definition element not found');
@@ -487,7 +513,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (success) {
             // Update display with full vocabulary data
             updateStatsDisplay();
-            console.log('✅ Complete vocabulary loaded and stats updated');
+
+            // Update current word display if user is on Chinese side
+            const cardFront = document.getElementById('card-front');
+            const cardBack = document.getElementById('card-back');
+            const isCurrentlyShowingChinese = cardFront && cardFront.style.display !== 'none';
+
+            if (isCurrentlyShowingChinese) {
+                displayChineseSide();
+                console.log('🔄 Updated Chinese side with loaded vocabulary');
+            }
+
+            console.log('✅ Complete vocabulary loaded and display updated');
         } else {
             console.log('⚠️ Using fallback vocabulary - display still functional');
         }
